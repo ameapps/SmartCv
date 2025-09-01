@@ -7,9 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
+  workExp: WorkExperience[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.workExp = [
+      {
+        title: 'ZInformatica & semanyica',
+        description: 'Tirocinio universitario'
+      },
+      {
+        title: 'LHub',
+        description: 'Sviluppo siti web vetrina con wordpress; focus su HTML e CSS'
+      },
+      {
+        title: 'Artiso',
+        description: 'Sviluppo app web in REACT e app descktop in WPF'
+      },
+      {
+        title: 'Softech',
+        description: 'Sviluppo Angular, .NET core'
+      },
+    ];
   }
 
+}
+
+export class WorkExperience {
+  title = '';
+  description = '';
 }
