@@ -22,7 +22,9 @@
             "LONG_DESCR": "Appassionato di informatica fin da bambino. Ho trascorso oltre 5 anni affinando le mie competenze attraverso progetti diversi. Fin da quando avevo 9 anni amo l'informatica. Questo interesse è diventato una vera carriera in cui continuo a imparare e a tenermi aggiornato con la tecnologia. Mi piace imparare facendo, non guardando tutorial. Nel corso degli anni ho sviluppato autonomamente numerosi progetti open source per sperimentare con una vasta gamma di tecnologie."
         },
         "CONTACT": {},
-        "EXPERIENCE": {},
+        "EXPERIENCE": {
+            "LONG_DESCR": "Ho avuto l'opportunità di lavorare per diverse aziende, dalle piccole startup alle grandi aziende, utilizzando tecnologie diverse. Ogni esperienza mi ha insegnato qualcosa e ho migliorato costantemente il mio percorso di apprendimento."
+        },
         "PROJECT": {},
         "SKILLS": {
             "LONG_DESCR": "Eccello nel scomporre problemi complessi in compiti gestibili, essenziale per creare codice robusto e manutenibile in progetti di grande scala. Sono motivato dalle sfide, sempre alla ricerca di opportunità per migliorare le mie competenze. Il mio approccio autodidatta mi permette di comprendere e adattarmi rapidamente a nuove tecnologie in modo autonomo."
