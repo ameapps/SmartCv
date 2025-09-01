@@ -1,0 +1,17 @@
+{
+  "common": {
+    "header": {
+      "can_show_drag_text": false
+    }
+  },
+  "pages": {
+    "home": {
+      "name": "Stefano"
+    },
+    "about": {},
+    "contact": {},
+    "experience": {},
+    "project": {},
+    "skills": {}
+  }
+}
