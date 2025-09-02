@@ -15,10 +15,10 @@
       <div class="line"></div>
       <div class="dots-line">
         <div class="dot-container" *ngFor="let exp of workExp">
-          <div class="dot"></div>
+          <div class="dot" (click)="onClickDot(exp)"></div>
           <div class="text">
             <div class="title">{{ exp.title }}</div>
-            <div class="description">{{ exp.description }}</div>
+            <div class="description" *ngIf="exp.isClicked">{{ exp.description }}</div>
           </div>
         </div>
       </div>

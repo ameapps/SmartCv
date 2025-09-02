@@ -15,21 +15,32 @@ export class ExperienceComponent implements OnInit {
     this.workExp = [
       {
         title: 'ZInformatica',
-        description: 'Tirocinio universitario'
+        description: 'Tirocinio universitario',
+        isClicked: false
       },
       {
         title: 'LHub',
-        description: 'Sviluppo siti web vetrina con wordpress; focus su HTML e CSS'
+        description: 'Sviluppo siti web vetrina con wordpress; focus su HTML e CSS',
+        isClicked: false
       },
       {
         title: 'Artiso',
-        description: 'Sviluppo app web in REACT e app descktop in WPF'
+        description: 'Sviluppo app web in REACT e app descktop in WPF',
+        isClicked: false
       },
       {
         title: 'Softech',
-        description: 'Sviluppo Angular, .NET core'
+        description: 'Sviluppo Angular, .NET core',
+        isClicked: false
       },
     ];
+  }
+
+  onClickDot(experience: WorkExperience) {
+    this.workExp.forEach(exp => {
+      exp.isClicked = false;
+    });
+    experience.isClicked = true;
   }
 
 }
@@ -37,4 +48,5 @@ export class ExperienceComponent implements OnInit {
 export class WorkExperience {
   title = '';
   description = '';
+  isClicked = false;
 }
