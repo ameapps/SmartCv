@@ -53,17 +53,42 @@
             height: 100%;
             margin: 2em;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: column;
             .line {
                 width: 100%;
                 height: 5px;
                 background-color: var(--color-secondary);
             }
-            .dot {
-                width: 25px;
-                height: 25px;
-                background: pink;
+            .dots-line {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .dot {
+                    width: 2em;
+                    height: 2em;
+                    top: -1em;
+                    position: relative;
+                    background-color: var(--color-secondary);
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px var(--color-secondary);
+                    box-shadow: 0 0 24px 2px var(--color-primary);
+                    animation: move-dot 3s infinite ease-in-out alternate;
+                    rotate: 25.2264deg;
+                    background: radial-gradient(circle, rgb(137, 255, 105), rgb(12, 12, 12));
+                }
+ 
+            }
+            .text-line {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .text {
+                    color: white;
+                    position: relative; 
+                }
             }
         }
     }

@@ -14,7 +14,7 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
     this.workExp = [
       {
-        title: 'ZInformatica & semanyica',
+        title: 'ZInformatica',
         description: 'Tirocinio universitario'
       },
       {
