@@ -16,22 +16,30 @@ export class ExperienceComponent implements OnInit {
       {
         title: 'ZInformatica',
         description: 'Tirocinio universitario',
-        isClicked: false
+        isClicked: false,
+        dateFrom: 'mm/yy',
+        dateTo: 'mm/yy'
       },
       {
         title: 'LHub',
         description: 'Sviluppo siti web vetrina con wordpress; focus su HTML e CSS',
-        isClicked: false
+        isClicked: false,
+        dateFrom: 'mm/yy',
+        dateTo: 'mm/yy'
       },
       {
         title: 'Artiso',
         description: 'Sviluppo app web in REACT e app descktop in WPF',
-        isClicked: false
+        isClicked: false,
+        dateFrom: 'mm/yy',
+        dateTo: 'mm/yy'
       },
       {
         title: 'Softech',
         description: 'Sviluppo Angular, .NET core',
-        isClicked: false
+        isClicked: false,
+        dateFrom: 'mm/yy',
+        dateTo: 'mm/yy'
       },
     ];
   }
@@ -49,4 +57,6 @@ export class WorkExperience {
   title = '';
   description = '';
   isClicked = false;
+  dateFrom = 'mm/yy';
+  dateTo = 'mm/yy';
 }
