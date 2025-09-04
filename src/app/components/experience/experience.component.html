@@ -2,12 +2,11 @@
   <div class="up">
     <!-- Testo skills -->
     <div class="text-box">
-      <span class="skills-up">{{ 'EXPERIENCES' }}</span>
-      <span class="skills-bracket">{{ '{ ' }}</span>
+      <span class="skills-up">{{ "EXPERIENCES" }}</span>
+      <span class="skills-bracket">{{ "{ " }}</span>
       <p class="skills-text">
-        {{ 'PAGES.EXPERIENCE.LONG_DESCR' | translate}}
+        {{ "PAGES.EXPERIENCE.LONG_DESCR" | translate }}
       </p>
-      <span class="skills-bracket"> {{ '}' }} </span>
     </div>
   </div>
   <div class="down">
@@ -18,11 +17,18 @@
           <div class="dot" (click)="onClickDot(exp)"></div>
           <div class="text">
             <div class="title">{{ exp.title }}</div>
-            <div class="description" *ngIf="exp.isClicked">{{ exp.description }}</div>
-            <div class="dates" *ngIf="exp.isClicked">{{ exp.dateFrom }} - {{ exp.dateTo }}</div>
+            <div class="description" *ngIf="exp.isClicked">
+              {{ exp.description }}
+            </div>
+            <div class="dates" *ngIf="exp.isClicked">
+              {{ exp.dateFrom }} - {{ exp.dateTo }}
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div> 
+  <div class="final-bracket">
+    <span class="skills-bracket"> {{ "}" }} </span>
   </div>
 </div>
