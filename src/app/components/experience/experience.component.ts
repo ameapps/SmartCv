@@ -15,31 +15,35 @@ export class ExperienceComponent implements OnInit {
     this.workExp = [
       {
         title: 'ZInformatica',
-        description: 'Tirocinio universitario',
+        description: 'Asp .NET MVC',
         isClicked: false,
         dateFrom: 'mm/yy',
-        dateTo: 'mm/yy'
+        dateTo: 'mm/yy',
+        country: 'Italy'
       },
       {
         title: 'LHub',
-        description: 'Sviluppo siti web vetrina con wordpress; focus su HTML e CSS',
+        description: 'Wordpress; HTML & CSS',
         isClicked: false,
         dateFrom: 'mm/yy',
-        dateTo: 'mm/yy'
+        dateTo: 'mm/yy',
+        country: 'Italy'
       },
       {
         title: 'Artiso',
-        description: 'Sviluppo app web in REACT e app descktop in WPF',
+        description: 'React, WPF',
         isClicked: false,
         dateFrom: 'mm/yy',
-        dateTo: 'mm/yy'
+        dateTo: 'mm/yy',
+        country: 'Germany'
       },
       {
         title: 'Softech',
-        description: 'Sviluppo Angular, .NET core',
+        description: 'Angular, Ionic, .NET core, Sql server, postGreSQL',
         isClicked: false,
         dateFrom: 'mm/yy',
-        dateTo: 'mm/yy'
+        dateTo: 'mm/yy',
+        country: 'Italy'
       },
     ];
   }
@@ -59,4 +63,5 @@ export class WorkExperience {
   isClicked = false;
   dateFrom = 'mm/yy';
   dateTo = 'mm/yy';
+  country = '';
 }

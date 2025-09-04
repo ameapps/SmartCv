@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
     //01. Imposto la lingua del sito in base alla lingua del browser
     this.setLanguageBasedOnBrowser();
     //02. Carico il file di config dell'app 
-    this.common.appConfig = await this.loadAppConfig();
+    this.common.appConfig = await this.common.loadAppConfig();
     console.info('info', this.common.appConfig);
     this.writeTextAutomatically();
   }
@@ -37,13 +37,6 @@ export class AppComponent implements OnInit {
     const langToUse = browserLang.split('-')[0];
     this.translate.setDefaultLang('it');
     this.translate.use(langToUse.match(/^(it|en)$/) ? langToUse : 'it');
-  }
-
-  async loadAppConfig(): Promise<DefaultConfig> {
-    const value = await lastValueFrom(
-      this.http_service.get<DefaultConfig>('assets/config/default-config.json')
-    );
-    return value;
   }
 
   private writeTextAutomatically() {

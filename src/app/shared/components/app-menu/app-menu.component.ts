@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../../services/common/common.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppMenuComponent implements OnInit {
 
-  constructor() { }
+  canShowDragText = true;
+
+  constructor(public common: CommonService) { }
 
   ngOnInit(): void {
+    this.canShowDragText = this.common.appConfig.common.header.can_show_drag_text;
   }
 
 }
