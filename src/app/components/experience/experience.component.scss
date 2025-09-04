@@ -82,6 +82,11 @@
               rgb(12, 12, 12)
             );
           }
+          .dot:hover {
+            box-shadow: 0 0 1em var(--color-secondary);
+            box-shadow: 0 0 2em calc(1em / 2) var(--color-primary);
+            cursor: pointer;
+          }
           .text {
             width: 100%;
             width: 100%;
