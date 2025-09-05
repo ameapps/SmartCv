@@ -129,6 +129,12 @@
                 font-weight: 500;
                 font-size: 24px;
               }
+              .tip {
+                margin-top: 0.5em;
+                font-size: calc(1em / 1.5);
+                color: var(--color-thirdy);
+                font-style: italic;
+              }
             }
           }
         }

@@ -27,11 +27,11 @@
             (click)="onClickDot(exp)"
             title="{{ !exp.isClicked ? 'Click me' : '' }}"
           ></div>
-<app-custom-dialog
-  [visible]="showDialog"
-  [data]="dialogData"
-  (closed)="closeDialog()"
-></app-custom-dialog>
+          <app-custom-dialog
+            [visible]="showDialog"
+            [data]="dialogData"
+            (closed)="closeDialog()"
+          ></app-custom-dialog>
           <div class="text">
             <div class="title">{{ exp.title }}</div>
             <div class="out-text">
@@ -41,6 +41,7 @@
               <div class="dates" *ngIf="exp.isClicked">
                 {{ exp.country }} | {{ exp.dateFrom }} - {{ exp.dateTo }}
               </div>
+              <div class="tip" *ngIf="exp.isClicked">Long press on dot for details</div>
             </div>
           </div>
         </div>
