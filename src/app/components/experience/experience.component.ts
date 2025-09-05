@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienceComponent implements OnInit {
 
   workExp: WorkExperience[] = [];
+  showDialog = false;
+  dialogData: any = null;
+  private longPressTimeouts: any[] = [];
 
   constructor() { }
 
@@ -48,11 +51,40 @@ export class ExperienceComponent implements OnInit {
     ];
   }
 
+
   onClickDot(experience: WorkExperience) {
     this.workExp.forEach(exp => {
       exp.isClicked = false;
     });
     experience.isClicked = true;
+  }
+
+  onDotPress(exp: WorkExperience, idx: number) {
+    this.clearLongPressTimeout(idx);
+    this.longPressTimeouts[idx] = setTimeout(() => {
+      this.openDialog(exp);
+    }, 2000);
+  }
+
+  onDotRelease(exp: WorkExperience, idx: number) {
+    this.clearLongPressTimeout(idx);
+  }
+
+  clearLongPressTimeout(idx: number) {
+    if (this.longPressTimeouts[idx]) {
+      clearTimeout(this.longPressTimeouts[idx]);
+      this.longPressTimeouts[idx] = null;
+    }
+  }
+
+  openDialog(exp: WorkExperience) {
+    this.dialogData = exp;
+    this.showDialog = true;
+  }
+
+  closeDialog() {
+    this.showDialog = false;
+    this.dialogData = null;
   }
 
 }

@@ -16,12 +16,22 @@
     <div class="line-container">
       <div class="line"></div>
       <div class="dots-line">
-        <div class="dot-container" *ngFor="let exp of workExp">
+        <div class="dot-container" *ngFor="let exp of workExp; let i = index">
           <div
             class="dot"
+            (mousedown)="onDotPress(exp, i)"
+            (mouseup)="onDotRelease(exp, i)"
+            (mouseleave)="onDotRelease(exp, i)"
+            (touchstart)="onDotPress(exp, i)"
+            (touchend)="onDotRelease(exp, i)"
             (click)="onClickDot(exp)"
             title="{{ !exp.isClicked ? 'Click me' : '' }}"
           ></div>
+<app-custom-dialog
+  [visible]="showDialog"
+  [data]="dialogData"
+  (closed)="closeDialog()"
+></app-custom-dialog>
           <div class="text">
             <div class="title">{{ exp.title }}</div>
             <div class="out-text">
