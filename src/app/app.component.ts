@@ -12,7 +12,7 @@ import { CommonService } from './shared/services/common/common.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'customCv';
+  title = 'SmartCv';
   displayedText = '';
 
   constructor(
