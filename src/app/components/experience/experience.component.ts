@@ -61,7 +61,7 @@ export class ExperienceComponent implements OnInit {
     this.clearLongPressTimeout(idx);
     this.longPressTimeouts[idx] = setTimeout(() => {
       this.openDialog(exp);
-    }, 750);
+    }, 250);
   }
 
   onDotRelease(exp: WorkExperience, idx: number) {
