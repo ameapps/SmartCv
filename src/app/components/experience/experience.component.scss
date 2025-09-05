@@ -7,7 +7,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-//   row-gap: 4em;
+  overflow-x: hidden;
+  position: relative;
+  top: -3em;
 
   //Sezione di DX
   .up {
@@ -42,38 +44,27 @@
   .down {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: row;
-
-    .chrono {
-      width: 100%;
-      margin: 2em;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-right: 0;
+    padding-left: 7em;
+    column-gap: 2em;
+    .text {
+      font-family: var(--font-family-text-level-1);
+      font-size: 24px;
+      color: var(--color-primary);
+    }
+    .line-container {
+      width: calc(100% - 16em);
+      height: 100%;
       display: flex;
+      align-items: center;
+      position: relative;
+      top: calc(3em - 10px);
       flex-direction: column;
-      .line-container {
+      .line {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        .line {
-          position: relative;
-          top: 50px;
-          width: 100%;
-          height: 5px;
-          background-color: var(--color-secondary);
-        }
-        .text {
-          position: relative;
-          top: 25px;
-          color: white;
-          color: var(--color-primary);
-          margin-left: 1em;
-          position: relative;
-          margin-right: 1em;
-        }
+        height: 2px;
+        background-color: var(--color-secondary);
       }
       .dots-line {
         width: 100%;
@@ -108,7 +99,8 @@
             box-shadow: 0 0 2em calc(1em / 2) var(--color-primary);
             cursor: pointer;
           }
-          .text {
+          .text {    
+            position: relative;
             width: 100%;
             width: 100%;
             display: flex;
@@ -120,19 +112,23 @@
               font-family: var(--font-family-text-level-1);
               font-weight: 500;
             }
-            .description {
-              position: relative;
-              color: white;
-              font-size: 24px;
-              font-family: var(--font-family-text-level-1);
-            }
-            .dates {
-              justify-content: start;
-              color: var(--color-primary);
-              font-size: calc(1em / 1.5);
-              font-family: var(--font-family-text-level-1);
-              font-weight: 500;
-              font-size: 24px;
+            .out-text {
+              position: absolute;
+              top: calc(2em - 4px);
+              .description {
+                position: relative;
+                color: white;
+                font-size: 24px;
+                font-family: var(--font-family-text-level-1);
+              }
+              .dates {
+                justify-content: start;
+                color: var(--color-primary);
+                font-size: calc(1em / 1.5);
+                font-family: var(--font-family-text-level-1);
+                font-weight: 500;
+                font-size: 24px;
+              }
             }
           }
         }
