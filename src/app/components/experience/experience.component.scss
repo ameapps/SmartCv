@@ -4,12 +4,11 @@
   height: 100%;
   background-color: var(--app-background-color);
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
   position: relative;
-  top: -3em;
+  top: 4em;
 
   //Sezione di DX
   .up {
@@ -93,16 +92,17 @@
               rgb(137, 255, 105),
               rgb(12, 12, 12)
             );
-            transition: box-shadow 0.4s cubic-bezier(0.4,0,0.2,1);
+            transition: box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           }
           .dot:hover {
             box-shadow: 0 0 2em calc(1em / 2) var(--color-primary);
             cursor: pointer;
           }
           .dot:active {
-            box-shadow: 0 0 2em calc(1em) var(--color-primary), 0 0 2em 0.5em #deb456;
+            box-shadow: 0 0 2em calc(1em) var(--color-primary),
+              0 0 2em 0.5em #deb456;
           }
-          .text {    
+          .text {
             position: relative;
             width: 100%;
             width: 100%;
