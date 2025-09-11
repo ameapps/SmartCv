@@ -10,10 +10,10 @@ import { AppMenuComponent } from "./shared/components/app-menu/app-menu.componen
 import { AboutComponent } from "./components/about/about.component";
 import { SkillsComponent } from "./components/skills/skills.component";
 import { ExperienceComponent } from "./components/experience/experience.component";
-import { CustomDialogComponent } from "./components/experience/custom-dialog/custom-dialog.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./components/home/home.component";
+import { CustomDialogComponent } from "./shared/components/custom-dialog/custom-dialog.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
