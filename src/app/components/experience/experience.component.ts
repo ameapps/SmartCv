@@ -17,7 +17,8 @@ export class ExperienceComponent implements OnInit {
     this.workExp = [
       {
         title: "ZInformatica",
-        description: "Asp .NET MVC",
+        summary: "Asp .NET MVC",
+        description: "Lorem ipsum dolor sit amet",
         isClicked: false,
         dateFrom: "mm/yy",
         dateTo: "mm/yy",
@@ -25,7 +26,8 @@ export class ExperienceComponent implements OnInit {
       },
       {
         title: "LHub",
-        description: "Wordpress; HTML & CSS",
+        summary: "Wordpress; HTML & CSS",
+        description: "Lorem ipsum dolor sit amet",
         isClicked: false,
         dateFrom: "mm/yy",
         dateTo: "mm/yy",
@@ -33,7 +35,8 @@ export class ExperienceComponent implements OnInit {
       },
       {
         title: "Artiso",
-        description: "React, WPF",
+        summary: "React, WPF",
+        description: "Lorem ipsum dolor sit amet",
         isClicked: false,
         dateFrom: "mm/yy",
         dateTo: "mm/yy",
@@ -41,7 +44,8 @@ export class ExperienceComponent implements OnInit {
       },
       {
         title: "Softech",
-        description: "Angular, Ionic, .NET core, Sql server, postGreSQL",
+        summary: "Angular, Ionic, .NET core, Sql server, postGreSQL",
+        description: "Lorem ipsum dolor sit amet",
         isClicked: false,
         dateFrom: "mm/yy",
         dateTo: "mm/yy",
@@ -88,7 +92,8 @@ export class ExperienceComponent implements OnInit {
 
 export class WorkExperience {
   title = "";
-  description = "";
+  summary = "";
+  description  = "";
   isClicked = false;
   dateFrom = "mm/yy";
   dateTo = "mm/yy";
