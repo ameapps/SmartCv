@@ -22,11 +22,13 @@
   font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 1em;
-  color: yellow;
+  font-family: var(--font-family-text-level-1);
+  color: var(--color-primary);
 }
 .dialog-content {
   margin-bottom: 1.5em;
-  color: yellow;
+  font-family: var(--font-family-text-level-1);
+  color: var(--color-thirdy);
 }
 .dialog-actions {
   display: flex;
