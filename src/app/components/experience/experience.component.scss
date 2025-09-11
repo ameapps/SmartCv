@@ -47,9 +47,7 @@
     flex-direction: row;
     padding-left: 7em;
     column-gap: 2em;
-    // min-width: 900px;
     position: relative;
-    // left: 150px;
     .text {
       font-family: var(--font-family-text-level-1);
       font-size: 24px;
@@ -114,13 +112,14 @@
             align-items: center;
             .title {
               color: var(--color-primary);
-              font-size: 36px;
+              font-size: 1em;
               font-family: var(--font-family-text-level-1);
               font-weight: 500;
             }
             .out-text {
               position: absolute;
               top: calc(2em - 4px);
+              min-width: 200px;
               .description {
                 position: relative;
                 color: white;
