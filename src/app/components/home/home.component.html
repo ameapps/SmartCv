@@ -5,6 +5,7 @@
     <p id="long-descr" class="text">
       {{ texts.longDescr }}
     </p>
+    <app-dynamic-text [text]="'ciaooo'"></app-dynamic-text>
     <div class="buttons">
       <button id="contact" routerLink="/#/contacts">{{ 'PAGES.HOME.CONTACT_ME' | translate}}</button>
       <button id="learn" (click)="learnMore()">{{ 'PAGES.HOME.LEARN' | translate}}</button>

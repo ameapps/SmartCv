@@ -14,6 +14,7 @@ import { ProjectsComponent } from "./components/projects/projects.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./components/home/home.component";
 import { CustomDialogComponent } from "./shared/components/custom-dialog/custom-dialog.component";
+import { DynamicTextComponent } from './shared/components/dynamic-text/dynamic-text.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -30,6 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     HomeComponent,
     CustomDialogComponent,
+    DynamicTextComponent,
   ],
   imports: [
     BrowserModule,
