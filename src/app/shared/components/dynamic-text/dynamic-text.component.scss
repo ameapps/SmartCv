@@ -1,3 +1,18 @@
-.text {
-    
+.style_1 {
+    font-size: 81px;
+    letter-spacing: -0.02em;
+    text-shadow: rgb(242, 255, 91) 2.6px 0px 10.4px;
+    color: rgb(242 255 91 / 1);
+    font-family: var(--font-family-text-level-2);
+    font-weight: 700;
+    margin: 0 !important;
+}
+
+.style_2 {
+    font-weight: 300;
+    font-size: 54px;
+    font-family: var(--font-family-text-level-3);
+    color: var(--color-secondary);
+    box-shadow: rgba(137, 255, 105, 0.42);
+    margin: 0 !important;  
 }
