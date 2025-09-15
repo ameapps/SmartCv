@@ -14,7 +14,9 @@ export class DynamicTextComponent implements OnInit {
   cyclesCount = 0;
   @Input() texts: string[] = [];
   @Input() cyclesLimit = -1;
-  @Input() config: 'title' | 'short-text' = 'short-text';
+
+  //'intro-title' | 'hover-title' | 'short-text' = 'intro-title'
+  @Input() config: string = 'intro-title';
   // #endregion
 
   constructor(public write_service: TypewriterService) { }
