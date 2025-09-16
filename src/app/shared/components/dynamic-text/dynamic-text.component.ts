@@ -14,6 +14,7 @@ export class DynamicTextComponent implements OnInit {
   cyclesCount = 0;
   @Input() texts: string[] = [];
   @Input() cyclesLimit = CyclesLimitVals.NO_LIMIT;
+  @Input() showAfterMs = showAfterMsVals.IMMEDIATLY;
 
   //'intro-title' | 'hover-title' | 'short-text' = 'intro-title'
   @Input() config: string = 'intro-title';
@@ -24,7 +25,7 @@ export class DynamicTextComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     setTimeout(async () => {
       this.cycleTexts();
-    }, 500); //Timer per dare il tempo di caricare la config dagli assets
+    }, 500 + this.showAfterMs); //Timer per dare il tempo di caricare la config dagli assets
   }
 
   async cycleTexts(): Promise<void> {
@@ -67,4 +68,8 @@ export class DynamicTextComponent implements OnInit {
 
 export enum CyclesLimitVals {
   NO_LIMIT = -1
+}
+
+export enum showAfterMsVals {
+  IMMEDIATLY = -1
 }
