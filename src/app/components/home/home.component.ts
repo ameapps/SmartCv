@@ -20,6 +20,10 @@ export class HomeComponent implements OnInit {
     answers.`
   }
 
+  get name(): string[] {
+    return [this.texts.name];
+  }
+
   constructor(private translate: TranslateService, private common: CommonService, private typewriterService: TypewriterService, private router: Router) { }
 
   async cycleTexts(): Promise<void> {
