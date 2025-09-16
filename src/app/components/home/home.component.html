@@ -1,11 +1,11 @@
 <div class="container">
   <div class="text-box">
-    <p class="name text">{{texts.name}}</p>
-    <!-- <app-dynamic-text 
-      [texts]="name"
+    <!-- <p class="name text">{{texts.name}}</p> -->
+    <app-dynamic-text 
+      [texts]="['Stefano']"
       [config]="'intro-title'"
       [cyclesLimit]="2"
-    ></app-dynamic-text> -->
+    ></app-dynamic-text>
     <!-- Testo corto -->
     <app-dynamic-text 
       [texts]="['CODE WIZARD', 'SOFTWARE ENGINEER', 'EXPERT AI USER']"
