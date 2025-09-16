@@ -1,15 +1,19 @@
 <div class="container">
   <div class="text-box">
-    <p class="name text">{{texts.name}}</p>
-    <p id="short-text" class="text">{{ texts.shortDescr}}</p>
-    <p id="long-descr" class="text">
-      {{ texts.longDescr }}
-    </p>
+    <!-- <p class="name text">{{texts.name}}</p> -->
+    <app-dynamic-text 
+      [texts]="[texts.name]"
+      [config]="'intro-title'"
+      [cyclesLimit]="2"
+    ></app-dynamic-text>
+    <!-- Testo corto -->
     <app-dynamic-text 
       [texts]="['CODE WIZARD', 'SOFTWARE ENGINEER', 'EXPERT AI USER']"
       [config]="'short-text'"
-      [cyclesLimit]="2"
-      ></app-dynamic-text>
+    ></app-dynamic-text>
+    <p id="long-descr" class="text">
+      {{ texts.longDescr }}
+    </p>
     <div class="buttons">
       <button id="contact" routerLink="/#/contacts">{{ 'PAGES.HOME.CONTACT_ME' | translate}}</button>
       <button id="learn" (click)="learnMore()">{{ 'PAGES.HOME.LEARN' | translate}}</button>
