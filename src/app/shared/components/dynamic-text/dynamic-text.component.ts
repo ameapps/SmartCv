@@ -13,7 +13,7 @@ export class DynamicTextComponent implements OnInit {
   text = '';
   cyclesCount = 0;
   @Input() texts: string[] = [];
-  @Input() cyclesLimit = -1;
+  @Input() cyclesLimit = CyclesLimitVals.NO_LIMIT;
 
   //'intro-title' | 'hover-title' | 'short-text' = 'intro-title'
   @Input() config: string = 'intro-title';
@@ -31,7 +31,7 @@ export class DynamicTextComponent implements OnInit {
     let index = 0;
     //Eseguo la scrittura del testo in loop 
     const loop = async () => {
-      if (this.cyclesCount >= this.cyclesLimit || this.cyclesLimit === -1) return;
+      if (this.cyclesCount >= this.cyclesLimit && this.cyclesLimit != CyclesLimitVals.NO_LIMIT) return;
       await this.writeTextAutomatically(this.texts[index]);
       index = (index + 1) % this.texts.length;
       ++this.cyclesCount;
@@ -63,4 +63,8 @@ export class DynamicTextComponent implements OnInit {
     }
   }
 
+}
+
+export enum CyclesLimitVals {
+  NO_LIMIT = -1
 }
