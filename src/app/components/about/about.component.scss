@@ -22,14 +22,11 @@
         flex-direction: row;
         .text-box {
             margin: 2em;
-            .about-up, .about-down {
+            .about-down {
                 color: var(--color-primary);
                 font-size: 54px;
                 font-family: var(--font-family-text-level-3);
                 font-weight: 500;
-            }
-            .about-up {
-                margin-right: 0.5em;
             }
             .about-bracket {
                 font-family: var(--font-family-text-level-1);

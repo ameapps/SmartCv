@@ -9,13 +9,10 @@
 }
 
 .hover-title {
-    font-size: 81px;
-    letter-spacing: -0.02em;
-    text-shadow: rgb(242, 255, 91) 2.6px 0px 10.4px;
-    color: rgb(242 255 91 / 1);
-    font-family: var(--font-family-text-level-2);
-    font-weight: 700;
-    margin: 0 !important;
+    color: var(--color-primary);
+    font-size: 54px;
+    font-family: var(--font-family-text-level-3);
+    font-weight: 500;
 }
 
 .short-text {

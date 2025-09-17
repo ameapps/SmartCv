@@ -14,14 +14,11 @@
         flex-direction: row;
         .text-box {
             margin: 2em;
-            .skills-up, .skills-down {
+            .skills-down {
                 color: var(--color-primary);
                 font-size: 54px;
                 font-family: var(--font-family-text-level-3);
                 font-weight: 500;
-            }
-            .skills-up {
-                margin-right: 0.5em;
             }
             .skills-text {
                 font-family: var(--font-family-text-level-1);

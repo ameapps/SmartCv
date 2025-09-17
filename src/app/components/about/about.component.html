@@ -1,8 +1,12 @@
 <div class="container">
   <div class="left">
     <!-- Testo skills -->
-    <div class="text-box">
-      <span class="about-up">{{ 'ABOUT' }}</span>
+    <div class="text-box">      
+      <app-dynamic-text 
+        [texts]="['ABOUT']"
+        [config]="'hover-title'"
+        [cyclesLimit]="1"
+      ></app-dynamic-text>
       <span class="about-bracket">{{ '{ ' }}</span>
       <p class="about-text">
         {{ 'PAGES.ABOUT.SHORT_DESCR' | translate}}

@@ -2,7 +2,11 @@
   <div class="left">
     <!-- Testo skills -->
     <div class="text-box">
-      <span class="skills-up">{{ 'SKILLS' }}</span>
+      <app-dynamic-text 
+        [texts]="['SKILLS']"
+        [config]="'hover-title'"
+        [cyclesLimit]="1"
+      ></app-dynamic-text>
       <span class="skills-bracket">{{ '{ ' }}</span>
       <p class="skills-text">
         {{ 'PAGES.SKILLS.LONG_DESCR' | translate}}

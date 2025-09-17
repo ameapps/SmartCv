@@ -2,8 +2,12 @@
   <!-- Parte superiore -->
   <div class="up">
     <!-- Testo skills -->
-    <div class="text-box">
-      <span class="skills-up">{{ "EXPERIENCES" }}</span>
+    <div class="text-box">      
+      <app-dynamic-text 
+        [texts]="['EXPERIENCES']"
+        [config]="'hover-title'"
+        [cyclesLimit]="1"
+      ></app-dynamic-text>
       <span class="skills-bracket">{{ "{ " }}</span>
       <p class="skills-text">
         {{ "PAGES.EXPERIENCE.LONG_DESCR" | translate }}
