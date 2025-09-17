@@ -1,8 +1,7 @@
 <div class="container">
   <div class="text-box">
-    <!-- <p class="name text">{{texts.name}}</p> -->
     <app-dynamic-text 
-      [texts]="['Stefano']"
+      [texts]="[this.common.appConfig.pages.home.name]"
       [config]="'intro-title'"
       [cyclesLimit]="1"
     ></app-dynamic-text>
