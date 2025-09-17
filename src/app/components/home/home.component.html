@@ -3,13 +3,11 @@
     <app-dynamic-text 
       [texts]="[this.common.appConfig.pages.home.name]"
       [config]="'intro-title'"
-      [cyclesLimit]="1"
     ></app-dynamic-text>
     <!-- Testo corto -->
     <app-dynamic-text 
       [texts]="['CODE WIZARD', 'SOFTWARE ENGINEER', 'EXPERT AI USER']"
       [config]="'short-text'"
-      [showAfterMs]="1000"
     ></app-dynamic-text>
     <p id="long-descr" class="text">
       {{ texts.longDescr }}
