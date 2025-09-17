@@ -23,9 +23,7 @@ export class DynamicTextComponent implements OnInit {
   constructor(public write_service: TypewriterService) { }
 
   async ngOnInit(): Promise<void> {
-    setTimeout(async () => {
-      this.cycleTexts();
-    }, 0); //Timer per dare il tempo di caricare la config dagli assets
+    this.cycleTexts();
   }
 
   async cycleTexts(): Promise<void> {
