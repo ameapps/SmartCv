@@ -44,7 +44,24 @@
       padding-left: 7em;
       column-gap: 2em;
       position: relative;
-
+      .box {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        .name {
+          color: var(--color-primary);
+          font-size: 36px;
+          font-family: var(--font-family-text-level-3);
+          font-weight: 500;
+        }
+        .descr {
+          font-family: var(--font-family-text-level-1);
+          font-size: 24px;
+          color: var(--color-thirdy);
+        }
+      }
     }
   
     .final-bracket {

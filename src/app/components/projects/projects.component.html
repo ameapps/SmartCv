@@ -16,7 +16,11 @@
     </div>
     <!-- Parte inferiore -->
     <div class="down">
-
+      <div *ngFor="let project of projects" class="box" (click)="onClickProject(project)">
+        <img src="" alt="">
+        <p class="name"> {{ project.name }}</p>
+        <p class="descr">{{ project.description }}</p>
+      </div>
     </div>
     <!-- Chiusa parentesi -->
     <div class="final-bracket">
