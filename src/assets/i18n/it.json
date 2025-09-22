@@ -25,7 +25,10 @@
         "EXPERIENCE": {
             "LONG_DESCR": "Ho avuto l'opportunità di lavorare per diverse aziende, dalle piccole startup alle grandi aziende, utilizzando tecnologie diverse. Ogni esperienza mi ha insegnato qualcosa e ho migliorato costantemente il mio percorso di apprendimento."
         },
-        "PROJECT": {},
+        "PROJECTS": {
+            "SHORT_DESCR": "Experiences",
+            "LONG_DESCR": ""
+        },
         "SKILLS": {
             "LONG_DESCR": "Eccello nel scomporre problemi complessi in compiti gestibili, essenziale per creare codice robusto e manutenibile in progetti di grande scala. Sono motivato dalle sfide, sempre alla ricerca di opportunità per migliorare le mie competenze. Il mio approccio autodidatta mi permette di comprendere e adattarmi rapidamente a nuove tecnologie in modo autonomo."
         }

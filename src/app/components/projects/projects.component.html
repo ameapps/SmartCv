@@ -1,3 +1,26 @@
 <div class="container">
-    <p>projects works!</p>
-</div>
+    <!-- Parte superiore -->
+    <div class="up">
+      <!-- Testo skills -->
+      <div class="text-box">      
+        <app-dynamic-text 
+          [texts]="['PROJECTS']"
+          [config]="'hover-title'"
+          [cyclesLimit]="1"
+        ></app-dynamic-text>
+        <span class="skills-bracket">{{ "{ " }}</span>
+        <p class="skills-text">
+          {{ "PAGES.PROJECTS.LONG_DESCR" | translate }}
+        </p>
+      </div>
+    </div>
+    <!-- Parte inferiore -->
+    <div class="down">
+
+    </div>
+    <!-- Chiusa parentesi -->
+    <div class="final-bracket">
+      <span class="skills-bracket"> {{ "}" }} </span>
+    </div>
+  </div>
+  

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WorkExperience } from '../experience/experience.component';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +8,87 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  workExp: WorkExperience[] = [];
+  showDialog = false;
+  dialogData: any = null;
+  private longPressTimeouts: any[] = [];
+
+  constructor() {}
 
   ngOnInit(): void {
+    this.workExp = [
+      {
+        title: "ZInformatica",
+        summary: "Asp .NET MVC",
+        description: "Lorem ipsum dolor sit amet",
+        isClicked: false,
+        dateFrom: "mm/yy",
+        dateTo: "mm/yy",
+        country: "Italy",
+      },
+      {
+        title: "LHub",
+        summary: "Wordpress; HTML & CSS",
+        description: "Lorem ipsum dolor sit amet",
+        isClicked: false,
+        dateFrom: "mm/yy",
+        dateTo: "mm/yy",
+        country: "Italy",
+      },
+      {
+        title: "Artiso",
+        summary: "React, WPF",
+        description: "Lorem ipsum dolor sit amet",
+        isClicked: false,
+        dateFrom: "mm/yy",
+        dateTo: "mm/yy",
+        country: "Germany",
+      },
+      {
+        title: "Softech",
+        summary: "Angular, Ionic, .NET core, Sql server, postGreSQL",
+        description: "Lorem ipsum dolor sit amet",
+        isClicked: false,
+        dateFrom: "mm/yy",
+        dateTo: "mm/yy",
+        country: "Italy",
+      },
+    ];
+  }
+
+  onClickDot(experience: WorkExperience) {
+    this.workExp.forEach((exp) => {
+      exp.isClicked = false;
+    });
+    experience.isClicked = true;
+  }
+
+  onDotPress(exp: WorkExperience, idx: number) {
+    this.clearLongPressTimeout(idx);
+    this.longPressTimeouts[idx] = setTimeout(() => {
+      this.openDialog(exp);
+    }, 250);
+  }
+
+  onDotRelease(exp: WorkExperience, idx: number) {
+    this.clearLongPressTimeout(idx);
+  }
+
+  clearLongPressTimeout(idx: number) {
+    if (this.longPressTimeouts[idx]) {
+      clearTimeout(this.longPressTimeouts[idx]);
+      this.longPressTimeouts[idx] = null;
+    }
+  }
+
+  openDialog(exp: WorkExperience) {
+    this.dialogData = exp;
+    this.showDialog = true;
+  }
+
+  closeDialog() {
+    this.showDialog = false;
+    this.dialogData = null;
   }
 
 }

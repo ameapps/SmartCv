@@ -25,7 +25,10 @@
         "EXPERIENCE": {
             "LONG_DESCR": "I had the opportunity to work for several companies using different technologies, from small startups to bigger companies. Each experience taught me something and I continuously improved in my learning journey."
         },
-        "PROJECT": {},
+        "PROJECTS": {
+            "SHORT_DESCR": "Experiences",
+            "LONG_DESCR": ""
+        },
         "SKILLS": {
             "LONG_DESCR" : "I excel in dissecting complex problems into manageable tasks, essential for crafting robust, maintainable code in large-scale projects. I'm driven by challenges, always seeking opportunities to enhance my skills. My self-directed learning approach empowers me to quickly grasp and adapt to new technologies autonomously."
         }
