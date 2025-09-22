@@ -98,8 +98,9 @@ export class DynamicTextComponent implements OnInit, OnChanges {
     );
   }
 
+  /**Mostra l'effetto hover sul testo quando possibile */
   onHover() {
-    this.scrambleText();
+    if (this.config === 'hover-title')this.scrambleText();
   }
 
 }
