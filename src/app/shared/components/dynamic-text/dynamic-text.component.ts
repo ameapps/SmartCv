@@ -77,7 +77,6 @@ export class DynamicTextComponent implements OnInit, OnChanges {
           },
           speedMs, // velocità in ms
           () => {
-            console.log('Scrittura completata!');
             resolve(); // risolve la Promise
           }
         );

@@ -64,7 +64,6 @@ export class HomeComponent implements OnInit {
           },
           80, // velocità in ms
           () => {
-            console.log('Scrittura completata!');
             resolve(); // risolve la Promise
           }
         );

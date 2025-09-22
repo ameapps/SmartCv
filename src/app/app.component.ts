@@ -49,7 +49,6 @@ export class AppComponent implements OnInit {
         },
         80, // velocità in ms
         () => {
-          console.log('Scrittura completata!');
         }
       );
     } catch (error) {
