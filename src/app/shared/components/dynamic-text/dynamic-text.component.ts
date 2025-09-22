@@ -27,7 +27,9 @@ export class DynamicTextComponent implements OnInit, OnChanges {
   }
 
   async ngOnInit(): Promise<void> {
-    this.cycleTexts();
+    if (this.config === 'intro-title') this.cycleTexts();
+    if (this.config === 'hover-title') this.scrambleText();
+    if (this.config === 'short-text') this.cycleTexts();
   }
 
   private applyConfig() {
@@ -63,17 +65,17 @@ export class DynamicTextComponent implements OnInit, OnChanges {
     loop(); 
   }
   
-  private async writeTextAutomatically(finalText: string): Promise<void> {
+  private async writeTextAutomatically(finalText: string, speedMs = 80): Promise<void> {
     try {
       const fullText = finalText;
-  
+
       await new Promise<void>((resolve, reject) => {
         this.write_service.typeText(
           fullText,
           (current) => {
             this.text = current;
           },
-          80, // velocità in ms
+          speedMs, // velocità in ms
           () => {
             console.log('Scrittura completata!');
             resolve(); // risolve la Promise
@@ -83,6 +85,22 @@ export class DynamicTextComponent implements OnInit, OnChanges {
     } catch (error) {
       console.error(error);
     }
+  }
+
+  /**Mostra il testo in scramble - la prima lettera mostra il giro dell'alfabeot in 100ms, la seconda in 200ms, la terza in 300ms e cosi via */
+  private scrambleText() {
+    this.write_service.scrambleText(
+      this.texts[0],
+      (current) => {
+        this.text = current; 
+      },
+      100,
+      () => console.log("Done!")
+    );
+  }
+
+  onHover() {
+    this.scrambleText();
   }
 
 }
