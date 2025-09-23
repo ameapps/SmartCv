@@ -12,7 +12,8 @@ export class AppMenuComponent implements OnInit {
 
   constructor(public common: CommonService) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    if (!this.common.hasAppInit) await this.common.initWebApp();
     this.canShowDragText = this.common.appConfig.common.header.can_show_drag_text;
   }
 

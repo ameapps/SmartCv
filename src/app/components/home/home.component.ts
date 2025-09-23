@@ -46,6 +46,8 @@ export class HomeComponent implements OnInit {
   }
   
   async ngOnInit(): Promise<void> {
+    //private common: CommonService
+    if (!this.common.hasAppInit) await this.common.initWebApp();
     setTimeout(async () => {
       await this.writeTextAutomatically(this.common.appConfig.pages.home.name, 'name');
       this.cycleTexts();

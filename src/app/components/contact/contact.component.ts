@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'src/app/shared/services/common/common.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private common: CommonService) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    //Operazioni di inizializzazione app 
+    //private common: CommonService
+    if (!this.common.hasAppInit) await this.common.initWebApp();
   }
 
 }

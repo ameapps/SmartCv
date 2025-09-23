@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { CommonService } from 'src/app/shared/services/common/common.service';
 
 @Component({
   selector: 'app-about',
@@ -8,9 +9,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private translate: TranslateService) { }
+  constructor(private common: CommonService, private translate: TranslateService) { }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    //Operazioni di inizializzazione app 
+    if (!this.common.hasAppInit) await this.common.initWebApp();
   }
 
 }

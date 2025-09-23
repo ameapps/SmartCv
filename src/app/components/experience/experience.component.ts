@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { CommonService } from "src/app/shared/services/common/common.service";
 
 @Component({
   selector: "app-experience",
@@ -11,9 +12,10 @@ export class ExperienceComponent implements OnInit {
   dialogData: any = null;
   private longPressTimeouts: any[] = [];
 
-  constructor() {}
+  constructor(private common: CommonService) {}
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+    if (!this.common.hasAppInit) await this.common.initWebApp();
     this.workExp = [
       {
         title: "ZInformatica",
