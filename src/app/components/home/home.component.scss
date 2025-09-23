@@ -99,6 +99,9 @@
     background: radial-gradient(circle, rgb(137, 255, 105), rgb(12, 12, 12));
   }
   
+  .short-text {
+    min-height: 70px;
+  }
 }
 
 @keyframes move-dot {

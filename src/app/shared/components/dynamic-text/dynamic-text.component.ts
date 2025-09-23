@@ -53,16 +53,30 @@ export class DynamicTextComponent implements OnInit, OnChanges {
 
   async cycleTexts(): Promise<void> {
     let index = 0;
-    //Eseguo la scrittura del testo in loop 
+  
     const loop = async () => {
-      if (this.cyclesCount >= this.cyclesLimit && this.cyclesLimit != CyclesLimitVals.NO_LIMIT) return;
-      await this.writeTextAutomatically(this.texts[index]);
-      index = (index + 1) % this.texts.length;
+      if (this.cyclesCount >= this.cyclesLimit && this.cyclesLimit !== CyclesLimitVals.NO_LIMIT) return;
+      const currentText = this.texts[index];
+      await this.writeTextAutomatically(currentText);
+      if (this.config === 'short-text') {
+        // Aspetta tot secondi prima di iniziare la cancellazione
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        // Cancella il testo, una lettera ogni 500ms
+        await this.deleteTextBackward(50);
+        index = (index + 1) % this.texts.length;
+      }
       ++this.cyclesCount;
-      setTimeout(loop, 1000); // tempo di pausa dopo la scrittura, non fissa
+      setTimeout(loop, 1000);
     };
-    // inizia il ciclo
-    loop(); 
+  
+    loop();
+  }
+
+  private async deleteTextBackward(speedMs = 500): Promise<void> {
+    while (this.text.length > 0) {
+      this.text = this.text.slice(0, -1); // Rimuove l'ultimo carattere
+      await new Promise(resolve => setTimeout(resolve, speedMs));
+    }
   }
   
   private async writeTextAutomatically(finalText: string, speedMs = 80): Promise<void> {
