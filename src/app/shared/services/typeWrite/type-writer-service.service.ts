@@ -40,10 +40,12 @@ export class TypewriterService {
     text: string,
     onUpdate: (current: string) => void,
     baseDuration: number = 100,
-    onComplete?: () => void
+    onComplete?: () => void,
+    preserveCase: boolean = false // nuovo parametro
   ): void {
     const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const target = text.toUpperCase().split('');
+    const original = text.split('');
+    const target = preserveCase ? original : text.toUpperCase().split('');
     const result: string[] = Array(target.length).fill('');
     let completed = 0;
   
@@ -53,21 +55,26 @@ export class TypewriterService {
       let step = 0;
   
       const interval = setInterval(() => {
-        // Mostra una lettera casuale dell'alfabeto
-        result[i] = alphabet.charAt(step % alphabet.length);
+        const scrambledChar = alphabet.charAt(step % alphabet.length);
+        // Applica maiuscolo/minuscolo in base al char originale se preserveCase è attivo
+        result[i] = preserveCase && /[a-z]/.test(original[i])
+          ? scrambledChar.toLowerCase()
+          : scrambledChar;
+  
         onUpdate(result.join(''));
         step++;
   
         if (step >= steps) {
           clearInterval(interval);
-          result[i] = char; // Fissa la lettera corretta
+          result[i] = original[i]; // Ripristina il carattere originale (con case corretto)
           completed++;
           onUpdate(result.join(''));
+  
           if (completed === target.length && onComplete) {
             onComplete();
           }
         }
-      }, duration / steps); // Distribuisce la durata totale su tutti i passaggi
+      }, duration / steps);
     });
   }
   
