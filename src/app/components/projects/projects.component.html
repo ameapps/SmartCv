@@ -18,7 +18,15 @@
     <div class="down">
       <div *ngFor="let project of projects" class="box" (click)="onClickProject(project)">
         <img class="app-logo" [src]="project.image" />
-        <p class="name"> {{ project.name }}</p>
+        <app-dynamic-text 
+          class="name"
+          [texts]="[project.name]"
+          [config]="'hover-title'"
+          [cyclesLimit]="1"
+          [style]="{
+            fontSize: '36px'
+          }"
+        ></app-dynamic-text>
         <p class="descr">{{ project.description }}</p>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { TypewriterService } from '../../services/typeWrite/type-writer-service.service';
 import { HomeTexts } from '../../models/home/home-texts';
 
@@ -7,7 +7,7 @@ import { HomeTexts } from '../../models/home/home-texts';
   templateUrl: './dynamic-text.component.html',
   styleUrls: ['./dynamic-text.component.scss']
 })
-export class DynamicTextComponent implements OnInit, OnChanges {
+export class DynamicTextComponent implements OnInit, OnChanges, AfterViewInit {
 
   // #region variables
   text = '';
@@ -15,12 +15,17 @@ export class DynamicTextComponent implements OnInit, OnChanges {
   @Input() texts: string[] = [];
   @Input() cyclesLimit = CyclesLimitVals.NO_LIMIT as number;
   @Input() showAfterMs = showAfterMsVals.IMMEDIATLY as number;
-
+  @ViewChild('textEl') textEl!: ElementRef<HTMLElement>;
   //'intro-title' | 'hover-title' | 'short-text' = 'intro-title'
   @Input() config: string = 'intro-title';
+  @Input() style!: TextStyle;
   // #endregion
 
   constructor(public write_service: TypewriterService) { }
+
+  ngAfterViewInit(): void {
+    if (this.style != null) this.applyCustomStyle();
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     if(changes['config']) this.applyConfig(); 
@@ -30,6 +35,13 @@ export class DynamicTextComponent implements OnInit, OnChanges {
     if (this.config === 'intro-title') this.cycleTexts();
     if (this.config === 'hover-title') this.scrambleText();
     if (this.config === 'short-text') this.cycleTexts();
+  }
+
+  private applyCustomStyle() {
+    if (!this.textEl) return;
+    if (this.style?.fontSize) {
+      this.textEl.nativeElement.style.fontSize = this.style.fontSize;
+    }
   }
 
   private applyConfig() {
@@ -125,4 +137,8 @@ export enum CyclesLimitVals {
 
 export enum showAfterMsVals {
   IMMEDIATLY = -1
+}
+
+export class TextStyle {
+  fontSize = '';
 }
