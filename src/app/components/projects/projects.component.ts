@@ -18,15 +18,15 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.projects = [
       {
-        image: '',
-        link: '',
+        image: 'https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/SportTracker/vect.svg',
+        link: 'https://ameapps.github.io/SportTracker/#/menu/homepage',
         name: "SportMonitoring",
         description: "Lorem ipsum dolor sit amet",
         isClicked: false,
       },
       {
-        image: '',
-        link: '',
+        image: 'https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/GameScopa/vect.svg',
+        link: 'https://ameapps.github.io/GameScopa',
         name: "GameScopa",
         description: "Lorem ipsum dolor sit amet",
         isClicked: false,
@@ -35,7 +35,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   onClickProject(project: Projects) {
-    window.open(project?.link)
+    // window.open(project?.link);
   }
 
   onClickDot(experience: WorkExperience) {

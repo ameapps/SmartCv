@@ -17,7 +17,7 @@
     <!-- Parte inferiore -->
     <div class="down">
       <div *ngFor="let project of projects" class="box" (click)="onClickProject(project)">
-        <img src="" alt="">
+        <img class="app-logo" [src]="project.image" />
         <p class="name"> {{ project.name }}</p>
         <p class="descr">{{ project.description }}</p>
       </div>
