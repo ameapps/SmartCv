@@ -15,6 +15,7 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./components/home/home.component";
 import { CustomDialogComponent } from "./shared/components/custom-dialog/custom-dialog.component";
 import { DynamicTextComponent } from './shared/components/dynamic-text/dynamic-text.component';
+import { ReactiveFormsModule } from "@angular/forms";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -35,6 +36,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     TranslateModule.forRoot({
