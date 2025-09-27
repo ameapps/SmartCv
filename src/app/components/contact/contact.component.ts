@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from 'src/app/shared/services/common/common.service';
+import { WorkExperience } from '../experience/experience.component';
+import { Projects } from '../projects/projects.component';
 
 @Component({
   selector: 'app-contact',
@@ -8,12 +10,9 @@ import { CommonService } from 'src/app/shared/services/common/common.service';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private common: CommonService) { }
+  constructor() { }
 
-  async ngOnInit(): Promise<void> {
-    //Operazioni di inizializzazione app 
-    //private common: CommonService
-    if (!this.common.hasAppInit) await this.common.initWebApp();
+  ngOnInit(): void {
+
   }
-
 }

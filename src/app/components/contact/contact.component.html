@@ -1,3 +1,18 @@
 <div class="container">
-  <p>contact works!</p>
+  <!-- Parte superiore -->
+  <div class="up">
+    <!-- Testo skills -->
+    <div class="text-box">
+      <app-dynamic-text [texts]="['CONTACTS']" [config]="'hover-title'" [cyclesLimit]="1"></app-dynamic-text>
+      <span class="skills-bracket">{{ "{ " }}</span>
+    </div>
+  </div>
+  <!-- Parte inferiore -->
+  <div class="down">
+
+  </div>
+  <!-- Chiusa parentesi -->
+  <div class="final-bracket">
+    <span class="skills-bracket"> {{ "}" }} </span>
+  </div>
 </div>
