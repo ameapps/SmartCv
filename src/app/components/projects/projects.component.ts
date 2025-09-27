@@ -23,6 +23,7 @@ export class ProjectsComponent implements OnInit {
         name: "SportMonitoring",
         description: "Lorem ipsum dolor sit amet",
         isClicked: false,
+        isHovering: false
       },
       {
         image: 'https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/GameScopa/vect.svg',
@@ -30,12 +31,20 @@ export class ProjectsComponent implements OnInit {
         name: "GameScopa",
         description: "Lorem ipsum dolor sit amet",
         isClicked: false,
+        isHovering: false
       }
     ];
   }
 
+  onHoverProject(project: Projects) {
+    this.projects.map((exp) => {
+      exp.isHovering = false;
+    });
+    project.isHovering = true;
+  }
+
   onClickProject(project: Projects) {
-    // window.open(project?.link);
+    window.open(project?.link);
   }
 
   onClickDot(experience: WorkExperience) {
@@ -52,4 +61,5 @@ export class Projects {
   link = '';
   description = '';
   isClicked = false;
+  isHovering = false
 }
