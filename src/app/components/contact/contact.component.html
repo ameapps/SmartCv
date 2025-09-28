@@ -13,28 +13,28 @@
       <div>
         <label>Email destinatario:</label>
         <input type="email" formControlName="to" placeholder="esempio@mail.com" />
-        <div *ngIf="emailForm.get('to')?.invalid && emailForm.get('to')?.touched">
+        <label class="label-wrong" *ngIf="emailForm.get('to')?.invalid && emailForm.get('to')?.touched">
           Inserisci un'email valida
-        </div>
+        </label>
       </div>
 
       <div>
         <label>Subject:</label>
         <input type="text" formControlName="subject" />
-        <div *ngIf="emailForm.get('subject')?.invalid && emailForm.get('subject')?.touched">
+        <label class="label-wrong" *ngIf="emailForm.get('subject')?.invalid && emailForm.get('subject')?.touched">
           Il subject è obbligatorio
-        </div>
+        </label>
       </div>
 
       <div>
         <label>Message:</label>
         <textarea rows="5" formControlName="message"></textarea>
-        <div *ngIf="emailForm.get('message')?.invalid && emailForm.get('message')?.touched">
+        <label class="label-wrong" *ngIf="emailForm.get('message')?.invalid && emailForm.get('message')?.touched">
           Il messaggio è obbligatorio
-        </div>
+        </label>
       </div>
 
-      <button type="submit" [disabled]="emailForm.invalid">Invia</button>
+      <button class="submit-button" type="submit" [disabled]="emailForm.invalid">Invia</button>
     </form>
 
   </div>

@@ -36,14 +36,32 @@
 
         .form-container {
             max-width: 400px;
-            margin: 20px auto;
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 1em;
+
+            .submit-button {
+                width: calc(100% + 18px)
+            }
         }
 
         label {
             font-weight: bold;
+            color: var(--color-thirdy);
+            font-size: 1em;
+            font-family: var(--font-family-text-level-3);
+            font-weight: 500;
+            position: relative;
+            bottom: 4px;
+        }
+
+        .label-wrong {
+            color: red;
+            font-size: 12px;
+            font-family: var(--font-family-text-level-3);
+            font-weight: 400;
+            position: relative;
+            top: 1px;
         }
 
         input,
@@ -58,8 +76,8 @@
             padding: 10px;
             border: none;
             border-radius: 6px;
-            background: #007acc;
-            color: white;
+            background-color: var(--color-primary);
+            color: var(--app-background-color);
             cursor: pointer;
         }
 
