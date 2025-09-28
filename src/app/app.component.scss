@@ -5,7 +5,21 @@
     height: 100%;
     background-color: aqua;
     background-color: var(--app-background-color);
+    display: flex;
+    flex-direction: row;
+
+    app-menu {
+      position: relative; 
+      left: 2em;
+    }
+
+    app-lang-selector {
+      position: absolute;
+      top: 2em;
+      right: 1em;
+    }
   }
+
   .content {
     position: absolute;
     width: 100%;

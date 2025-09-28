@@ -16,6 +16,7 @@ import { HomeComponent } from "./components/home/home.component";
 import { CustomDialogComponent } from "./shared/components/custom-dialog/custom-dialog.component";
 import { DynamicTextComponent } from './shared/components/dynamic-text/dynamic-text.component';
 import { ReactiveFormsModule } from "@angular/forms";
+import { LangSelectorComponent } from './shared/components/lang-selector/lang-selector.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -33,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     CustomDialogComponent,
     DynamicTextComponent,
+    LangSelectorComponent,
   ],
   imports: [
     BrowserModule,
