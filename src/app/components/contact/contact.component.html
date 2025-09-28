@@ -11,7 +11,7 @@
   <div class="down">
     <form [formGroup]="emailForm" (ngSubmit)="onSubmit()" class="form-container">
       <div>
-        <label>Email destinatario:</label>
+        <label>La tua Email</label>
         <input type="email" formControlName="to" placeholder="esempio@mail.com" />
         <label class="label-wrong" *ngIf="emailForm.get('to')?.invalid && emailForm.get('to')?.touched">
           Inserisci un'email valida
@@ -19,15 +19,15 @@
       </div>
 
       <div>
-        <label>Subject:</label>
+        <label>Soggetto</label>
         <input type="text" formControlName="subject" />
         <label class="label-wrong" *ngIf="emailForm.get('subject')?.invalid && emailForm.get('subject')?.touched">
-          Il subject è obbligatorio
+          Il soggetto è obbligatorio
         </label>
       </div>
 
       <div>
-        <label>Message:</label>
+        <label>Messaggio</label>
         <textarea rows="5" formControlName="message"></textarea>
         <label class="label-wrong" *ngIf="emailForm.get('message')?.invalid && emailForm.get('message')?.touched">
           Il messaggio è obbligatorio
