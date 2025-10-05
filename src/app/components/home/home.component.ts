@@ -12,14 +12,6 @@ import { TypewriterService } from 'src/app/shared/services/typeWrite/type-writer
 })
 export class HomeComponent implements OnInit {
 
-  texts: HomeTexts = {
-    name: '',
-    shortDescr: '',
-    longDescr: `Self-taught programmer motivated by passion and personal projects. Expert
-    of searching bugs on Google and quickly scanning the best StackOverflow
-    answers.`
-  }
-
   constructor(
     private translate: TranslateService, 
     public common: CommonService, 
@@ -37,7 +29,6 @@ export class HomeComponent implements OnInit {
     let index = 0;
     //Eseguo la scrittura del testo in loop 
     const loop = async () => {
-      await this.writeTextAutomatically(texts[index], 'shortDescr');
       index = (index + 1) % texts.length;
       setTimeout(loop, 1000); // tempo di pausa dopo la scrittura, non fissa
     };
@@ -46,33 +37,7 @@ export class HomeComponent implements OnInit {
   }
   
   async ngOnInit(): Promise<void> {
-    //private common: CommonService
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    setTimeout(async () => {
-      await this.writeTextAutomatically(this.common.appConfig.pages.home.name, 'name');
-      this.cycleTexts();
-    }, 500); //Timer per dare il tempo di caricare la config dagli assets
-  }
-
-  private async writeTextAutomatically(finalText: string, refText: keyof HomeTexts): Promise<void> {
-    try {
-      const fullText = finalText;
-  
-      await new Promise<void>((resolve, reject) => {
-        this.typewriterService.typeText(
-          fullText,
-          (current) => {
-            this.texts[refText] = current;
-          },
-          80, // velocità in ms
-          () => {
-            resolve(); // risolve la Promise
-          }
-        );
-      });
-    } catch (error) {
-      console.error(error);
-    }
   }
 
   /**Method opening the given linkedIn profile! */

@@ -11,10 +11,10 @@
       [config]="'short-text'"
     ></app-dynamic-text>
     <p id="long-descr" class="text">
-      {{ texts.longDescr }}
+      {{ 'PAGES.HOME.LONG_DESCR' | translate }} 
     </p>
     <div class="buttons">
-      <button id="contact" routerLink="/#/contacts">{{ 'PAGES.HOME.CONTACT_ME' | translate}}</button>
+      <button id="contact" routerLink="/contacts">{{ 'PAGES.HOME.CONTACT_ME' | translate}}</button>
       <button id="learn" (click)="learnMore()">{{ 'PAGES.HOME.LEARN' | translate}}</button>
     </div>
   </div>

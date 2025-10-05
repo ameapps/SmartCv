@@ -9,6 +9,8 @@
     },
     "PAGES": {
         "HOME": {
+            "SHORT_DESCR": "",
+            "LONG_DESCR": "Programmatore autodidatta, motivato dalla passione e da progetti personali. Esperto nell’individuare bug tramite ricerche mirate su Google e nel selezionare rapidamente le soluzioni più efficaci su StackOverflow.",
             "DYNAMIC": {
                 "TEXT_1": "MAGO DEL CODICE",
                 "TEXT_2": "INGEGNERE DEL SOFTWARE",
@@ -18,7 +20,7 @@
             "LEARN": "Scopri di più"
         },
         "ABOUT": {
-            "SHORT_DESCR": "Ingegnere del software con oltre 7 anni di esperienza. Maghetto a tempo pieno e fiero sviluppatore di bug.",
+            "SHORT_DESCR": "Ingegnere del software con oltre 6 anni di esperienza. Sviluppatore a tempo pieno e fiero creatore di bug.",
             "LONG_DESCR": "Appassionato di informatica fin da bambino. Ho trascorso oltre 5 anni affinando le mie competenze attraverso progetti diversi. Fin da quando avevo 9 anni amo l'informatica. Questo interesse è diventato una vera carriera in cui continuo a imparare e a tenermi aggiornato con la tecnologia. Mi piace imparare facendo, non guardando tutorial. Nel corso degli anni ho sviluppato autonomamente numerosi progetti open source per sperimentare con una vasta gamma di tecnologie."
         },
         "CONTACT": {},

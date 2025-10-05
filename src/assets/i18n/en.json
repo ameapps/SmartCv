@@ -9,6 +9,8 @@
     },
     "PAGES": {
         "HOME": {
+            "SHORT_DESCR": "",
+            "LONG_DESCR": "Self-taught programmer motivated by passion and personal projects. Expert of searching bugs on Google and quickly scanning the best StackOverflow answers.",
             "DYNAMIC": {
                 "TEXT_1": "CODE WIZARD",
                 "TEXT_2": "SOFTWARE ENGINEER",
