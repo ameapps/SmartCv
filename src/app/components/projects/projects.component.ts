@@ -18,10 +18,18 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.projects = [
       {
+        image: 'https://github.com/ameapps/SharedLogin/blob/master/src/assets/images/products/WordleClone/vect.png?raw=true',
+        link: 'https://ameapps.github.io/WordleCloneV2/',
+        name: "WordleClone",
+        description: "App che simula il gioco Wordle",
+        isClicked: false,
+        isHovering: false
+      },
+      {
         image: 'https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/SportTracker/vect.svg',
         link: 'https://ameapps.github.io/SportTracker/#/menu/homepage',
         name: "SportMonitoring",
-        description: "Lorem ipsum dolor sit amet",
+        description: "App per il monitoraggio delle attività sportive e del cibo assunto",
         isClicked: false,
         isHovering: false
       },
@@ -29,7 +37,7 @@ export class ProjectsComponent implements OnInit {
         image: 'https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/GameScopa/vect.svg',
         link: 'https://ameapps.github.io/GameScopa',
         name: "GameScopa",
-        description: "Lorem ipsum dolor sit amet",
+        description: "Celebre gioco di carte italiano",
         isClicked: false,
         isHovering: false
       }
