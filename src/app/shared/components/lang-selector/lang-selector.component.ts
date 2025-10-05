@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-lang-selector',
@@ -12,11 +13,15 @@ export class LangSelectorComponent implements OnInit {
     { lang: 'it', img: 'assets/images/icons/langs/IT-IT.svg' }
   ];
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
   }
 
+  changeLanguage(lang: string): void {
+    console.log(`Language changed to: ${lang}`);
+    this.translate.use(lang);
+  }
 }
 
 export class Flag {

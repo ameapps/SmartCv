@@ -1,5 +1,5 @@
 <div class="container">
     <div class="flag" *ngFor="let flag of flags">
-        <img [src]="flag.img" [alt]="flag.lang" />
+        <img [src]="flag.img" [alt]="flag.lang" (click)="changeLanguage(flag.lang)" />
     </div>
 </div>
