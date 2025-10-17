@@ -11,30 +11,30 @@
   <div class="down">
     <form [formGroup]="emailForm" (ngSubmit)="onSubmit()" class="form-container">
       <div>
-        <label>La tua Email</label>
+        <label> {{ "PAGES.CONTACT.EMAIL" | translate }}</label>
         <input type="email" formControlName="to" placeholder="esempio@mail.com" />
         <label class="label-wrong" *ngIf="emailForm.get('to')?.invalid && emailForm.get('to')?.touched">
-          Inserisci un'email valida
+          {{ "PAGES.CONTACT.EMAIL_VALID" | translate }}
         </label>
       </div>
 
       <div>
-        <label>Soggetto</label>
+        <label>{{ "PAGES.CONTACT.SUBJECT" | translate }}</label>
         <input type="text" formControlName="subject" />
         <label class="label-wrong" *ngIf="emailForm.get('subject')?.invalid && emailForm.get('subject')?.touched">
-          Il soggetto è obbligatorio
+          {{ "PAGES.CONTACT.SUBJECT_MANDATORY" | translate }}
         </label>
       </div>
 
       <div>
-        <label>Messaggio</label>
+        <label>{{ "PAGES.CONTACT.MESSAGE" | translate }}</label>
         <textarea rows="5" formControlName="message"></textarea>
         <label class="label-wrong" *ngIf="emailForm.get('message')?.invalid && emailForm.get('message')?.touched">
-          Il messaggio è obbligatorio
+          {{ "PAGES.CONTACT.MESSAGE_MANDATORY" | translate }}
         </label>
       </div>
 
-      <button class="submit-button" type="submit" [disabled]="emailForm.invalid">Invia</button>
+      <button class="submit-button" type="submit" [disabled]="emailForm.invalid">{{ "PAGES.CONTACT.SEND" | translate }}</button>
     </form>
 
   </div>

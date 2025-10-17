@@ -3,8 +3,8 @@
         "ABOUT": "About",
         "SKILLS": "Skills",
         "WORK": "Experiences",
-        "PROJECT": "Project",
-        "CONTACT": "Contact",
+        "PROJECT": "Projects",
+        "CONTACT": "Contacts",
         "CV": "CV"
     },
     "PAGES": {
@@ -23,7 +23,15 @@
             "SHORT_DESCR": "Software engineer with over 7 years of experience. Full time wizard & proud bug developer.",
             "LONG_DESCR" : "Passionate about computer science since childhood. I've spent over 5 years refining my skills through diverse projects. Ever since I was 9 years old, I've loved computer science. This interest has grown into a full career where I keep learning and staying up-to-date with technology. I like to learn by doing, not watching tutorials. Over the years, I have independently developed numerous open-source projects to experiment with a wide range of technologies."
         },
-        "CONTACT": {},
+        "CONTACT": {
+            "EMAIL": "Your email",
+            "EMAIL_VALID": "Insert a valid email",
+            "SUBJECT": "Subject",
+            "SUBJECT_MANDATORY": "Subject is mandatory",
+            "MESSAGE": "Message",
+            "MESSAGE_MANDATORY": "Message is mandatory",
+            "SEND": "Send"
+        },
         "EXPERIENCE": {
             "LONG_DESCR": "I had the opportunity to work for several companies using different technologies, from small startups to bigger companies. Each experience taught me something and I continuously improved in my learning journey."
         },
