@@ -9,7 +9,7 @@
   </div>
   <!-- Parte inferiore -->
   <div class="down">
-    <div *ngFor="let project of projects" class="outer-box" (mouseenter)="onHoverProject(project)"
+    <div *ngFor="let project of userProjects" class="outer-box" (mouseenter)="onHoverProject(project)"
       (mouseleave)="onHoverProject(project)" (click)="onClickProject(project)"
       [ngClass]="project.isHovering? 'project-border' : ''">
       <div class="inner-box">

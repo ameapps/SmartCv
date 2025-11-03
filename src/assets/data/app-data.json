@@ -1,7 +1,9 @@
 {
   "DEMO": {
     "home": {
-      "name": "Demo"
+      "name": "Demo",
+      "short_descr": ["CODE WIZARD", "SOFTWARE ENGINEER", "EXPERT AI USER"],
+      "long_descr": "Ciao! Sono un appassionato sviluppatore full-stack con esperienza in una varietà di tecnologie web. Amo creare applicazioni funzionali e ben progettate che offrono esperienze utente eccezionali. Nel mio tempo libero, mi piace esplorare nuove tecnologie e lavorare su progetti open source."
     },
     "about": {
       "short_descr": "Sviluppatore full-stack con una forte passione per il design pulito e il codice ben strutturato. Credo che la semplicità sia la chiave dell’efficienza.",
@@ -92,7 +94,9 @@
   },
   "STEAME": {
     "home": {
-      "name": "Stefano"
+      "name": "Stefano",
+      "short_descr": ["CODE WIZARD", "SOFTWARE ENGINEER", "EXPERT AI USER"],
+      "long_descr": "Programmatore autodidatta, motivato dalla passione e da progetti personali. Esperto nell’individuare bug tramite ricerche mirate su Google e nel selezionare rapidamente le soluzioni più efficaci su StackOverflow."
     },
     "about": {
       "short_descr": "Ingegnere del software con oltre 6 anni di esperienza. Sviluppatore a tempo pieno e fiero creatore di bug.",

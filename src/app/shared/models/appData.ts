@@ -9,6 +9,8 @@ export class AppData {
 
 export class AppDataHome {
     name!: string;
+    short_descr: string[] = [];
+    long_descr = '';
 }
 export class AppDataAbout {
     short_descr = '';

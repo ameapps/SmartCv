@@ -9,7 +9,7 @@ import { CommonService } from 'src/app/shared/services/common/common.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects: AppDataProject[] = [];
+  userProjects: AppDataProject[] = [];
   showDialog = false;
   dialogData: any = null;
   private longPressTimeouts: any[] = [];
@@ -18,11 +18,11 @@ export class ProjectsComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    this.projects = this.common.appData.projects.list;
+    this.userProjects = this.common.appData.projects.list;
   }
 
   onHoverProject(project: AppDataProject) {
-    this.projects.map((exp) => {
+    this.userProjects.map((exp) => {
       exp.isHovering = false;
     });
     project.isHovering = true;
@@ -33,7 +33,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   onClickDot(experience: AppDataExperienceWorks) {
-    this.projects.forEach((exp) => {
+    this.userProjects.forEach((exp) => {
       exp.isClicked = false;
     });
     experience.isClicked = true;

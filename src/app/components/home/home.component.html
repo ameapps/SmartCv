@@ -7,11 +7,11 @@
     <!-- Testo corto -->
     <app-dynamic-text 
       class="short-text"
-      [texts]="['CODE WIZARD', 'SOFTWARE ENGINEER', 'EXPERT AI USER']"
+      [texts]="this.homeTexts.short_descr"
       [config]="'short-text'"
     ></app-dynamic-text>
     <p id="long-descr" class="text">
-      {{ 'PAGES.HOME.LONG_DESCR' | translate }} 
+      {{ this.homeTexts.long_descr | translate }} 
     </p>
     <div class="buttons">
       <button id="contact" routerLink="/contacts">{{ 'PAGES.HOME.CONTACT_ME' | translate}}</button>

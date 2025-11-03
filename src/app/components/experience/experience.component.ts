@@ -8,7 +8,7 @@ import { CommonService } from "src/app/shared/services/common/common.service";
   styleUrls: ["./experience.component.scss"],
 })
 export class ExperienceComponent implements OnInit {
-  workExp: AppDataExperienceWorks[] = [];
+  userExperiences: AppDataExperienceWorks[] = [];
   showDialog = false;
   dialogData: any = null;
   private longPressTimeouts: any[] = [];
@@ -20,11 +20,11 @@ export class ExperienceComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    this.workExp = this.common.appData.experience.list;
+    this.userExperiences = this.common.appData.experience.list;
   }
 
   onClickDot(experience: AppDataExperienceWorks) {
-    this.workExp.forEach((exp) => {
+    this.userExperiences.forEach((exp) => {
       exp.isClicked = false;
     });
     experience.isClicked = true;
