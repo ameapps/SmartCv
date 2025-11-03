@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { AppDataContact, AppDataSkills } from 'src/app/shared/models/appData';
 import { CommonService } from 'src/app/shared/services/common/common.service';
 
 @Component({
@@ -9,10 +10,13 @@ import { CommonService } from 'src/app/shared/services/common/common.service';
 })
 export class SkillsComponent implements OnInit {
 
+  userSkills!: AppDataSkills;
+
   constructor(private common: CommonService, private translate: TranslateService) { }
 
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
+    this.userSkills = this.common.appData.skills;
   }
 
 }

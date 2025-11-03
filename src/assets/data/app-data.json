@@ -4,9 +4,9 @@
       "name": "Demo"
     },
     "about": {
-    "short_descr": "Sviluppatore full-stack con una forte passione per il design pulito e il codice ben strutturato. Credo che la semplicità sia la chiave dell’efficienza.",
-    "long_descr": "Mi occupo di sviluppo web da diversi anni, lavorando su progetti che spaziano da applicazioni enterprise a piccole web app sperimentali. Mi piace costruire soluzioni scalabili, mantenibili e facili da usare. Sono curioso per natura e cerco costantemente di migliorarmi, imparando nuove tecnologie e condividendo ciò che imparo con gli altri. Amo la sensazione di vedere un’idea prendere forma riga dopo riga di codice."
-  },
+      "short_descr": "Sviluppatore full-stack con una forte passione per il design pulito e il codice ben strutturato. Credo che la semplicità sia la chiave dell’efficienza.",
+      "long_descr": "Mi occupo di sviluppo web da diversi anni, lavorando su progetti che spaziano da applicazioni enterprise a piccole web app sperimentali. Mi piace costruire soluzioni scalabili, mantenibili e facili da usare. Sono curioso per natura e cerco costantemente di migliorarmi, imparando nuove tecnologie e condividendo ciò che imparo con gli altri. Amo la sensazione di vedere un’idea prendere forma riga dopo riga di codice."
+    },
     "contact": {},
     "experience": {
       "list": [
@@ -86,7 +86,9 @@
         }
       ]
     },
-    "skills": {}
+    "skills": {
+      "long_descr": "Eccello nel scomporre problemi complessi in compiti gestibili, essenziale per creare codice robusto e manutenibile in progetti di grande scala. Sono motivato dalle sfide, sempre alla ricerca di opportunità per migliorare le mie competenze. Il mio approccio autodidatta mi permette di comprendere e adattarmi rapidamente a nuove tecnologie in modo autonomo."
+    }
   },
   "STEAME": {
     "home": {
@@ -155,6 +157,8 @@
         }
       ]
     },
-    "skills": {}
+    "skills": {
+      "long_descr": "Eccello nel scomporre problemi complessi in compiti gestibili, essenziale per creare codice robusto e manutenibile in progetti di grande scala. Sono motivato dalle sfide, sempre alla ricerca di opportunità per migliorare le mie competenze. Il mio approccio autodidatta mi permette di comprendere e adattarmi rapidamente a nuove tecnologie in modo autonomo."
+    }
   }
 }

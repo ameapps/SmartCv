@@ -34,7 +34,7 @@ export class AppDataProject {
 }
 
 export class AppDataSkills {
-
+    long_descr = '';
 }
 
 export class AppDataExperienceWorks {
