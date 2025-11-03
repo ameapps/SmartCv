@@ -11,7 +11,8 @@ export class AppDataHome {
     name!: string;
 }
 export class AppDataAbout {
-
+    short_descr = '';
+    long_descr = '';
 }
 export class AppDataContact {
 
