@@ -3,7 +3,7 @@ export class AppData {
     about!: AppDataAbout;
     contact!: AppDataContact;
     experience!: AppDataExperience;
-    project!: AppDataProject;
+    projects!: AppDataProjects;
     skills!: AppDataSkills;
 }
 
@@ -19,9 +19,19 @@ export class AppDataContact {
 export class AppDataExperience {
     workEpx!: AppDataExperienceWorks[];
 }
-export class AppDataProject {
-
+export class AppDataProjects {
+    list!: AppDataProject[];
 }
+
+export class AppDataProject {
+  name = '';
+  image = '';
+  link = '';
+  description = '';
+  isClicked = false;
+  isHovering = false
+}
+
 export class AppDataSkills {
 
 }

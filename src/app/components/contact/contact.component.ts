@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from 'src/app/shared/services/common/common.service';
-import { Projects } from '../projects/projects.component';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
