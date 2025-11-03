@@ -4,6 +4,7 @@ export class DefaultConfig {
 }
 
 export class DefaultConfigCommon {
+  app!: DefaultConfigCommonApp;
   header!: DefaultConfigCommonHeader;
 }
 export class DefaultConfigPages {
@@ -26,4 +27,8 @@ export class DefaultConfigPagesSkills {}
 
 export class DefaultConfigCommonHeader {
   can_show_drag_text = true;
+}
+
+export class DefaultConfigCommonApp {
+  current_user = 'DEMO'
 }

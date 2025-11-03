@@ -1,5 +1,8 @@
 {
   "common": {
+    "app": {
+      "current_user": "DEMO"
+    },
     "header": {
       "can_show_drag_text": false
     }

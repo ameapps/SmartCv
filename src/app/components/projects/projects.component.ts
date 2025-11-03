@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WorkExperience } from '../experience/experience.component';
+import { AppDataExperienceWorks } from 'src/app/shared/models/appData';
 
 @Component({
   selector: 'app-projects',
@@ -55,7 +55,7 @@ export class ProjectsComponent implements OnInit {
     window.open(project?.link);
   }
 
-  onClickDot(experience: WorkExperience) {
+  onClickDot(experience: AppDataExperienceWorks) {
     this.projects.forEach((exp) => {
       exp.isClicked = false;
     });
