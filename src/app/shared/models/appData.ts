@@ -17,7 +17,7 @@ export class AppDataContact {
 
 }
 export class AppDataExperience {
-    workEpx!: AppDataExperienceWorks[];
+    list!: AppDataExperienceWorks[];
 }
 export class AppDataProjects {
     list!: AppDataProject[];

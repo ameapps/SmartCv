@@ -24,7 +24,7 @@ export class ExperienceComponent implements OnInit {
   }
 
   private getExperiencesData() {
-    this.workExp = this.common.appData.experience.workEpx;
+    this.workExp = this.common.appData.experience.list;
   }
 
   onClickDot(experience: AppDataExperienceWorks) {

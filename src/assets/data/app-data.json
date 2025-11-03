@@ -6,7 +6,7 @@
     "about": {},
     "contact": {},
     "experience": {
-      "workEpx": [
+      "list": [
         {
           "title": "Software Engineer",
           "summary": "Sviluppo di applicazioni backend e servizi REST in ambiente cloud.",
@@ -92,7 +92,7 @@
     "about": {},
     "contact": {},
     "experience": {
-      "workEpx": [
+      "list": [
         {
           "title": "ZInformatica",
           "summary": "Asp .NET MVC",
