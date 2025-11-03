@@ -20,10 +20,6 @@ export class ExperienceComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    this.getExperiencesData();
-  }
-
-  private getExperiencesData() {
     this.workExp = this.common.appData.experience.list;
   }
 
