@@ -11,11 +11,18 @@ export class ExperienceComponent implements OnInit {
   showDialog = false;
   dialogData: any = null;
   private longPressTimeouts: any[] = [];
+  public get currentYear() {
+    return new Date().getFullYear();
+  }
 
   constructor(private common: CommonService) {}
 
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
+    this.getExperiencesData();
+  }
+
+  private getExperiencesData() {
     this.workExp = [
       {
         title: "ZInformatica",
