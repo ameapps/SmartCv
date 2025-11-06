@@ -17,7 +17,6 @@ export class DefaultConfigPages {
 }
 
 export class DefaultConfigPagesHome {
-  name!: string;
 }
 export class DefaultConfigPagesAbout {}
 export class DefaultConfigPagesContact {}
