@@ -14,6 +14,9 @@ export class CommonService {
   public appConfig!: DefaultConfig;
   public appData!: AppData;
   public current_user = 'Demo';
+  get current_lang(): string {
+    return this.translate.currentLang;
+  }
 
   //#endregion
 
@@ -30,17 +33,25 @@ export class CommonService {
     console.info('info', this.appConfig);
     this.hasAppInit = true;
     //03. Carico i dati dell'app 
-    this.current_user = this.appConfig.common.app.current_user ?? 'DEMO';
-    const allAppData = await this.loadAppData();
-    this.appData = allAppData[this.current_user] as any;
+    await this.getUserData();
   }
 
   /**Caricamento dei dati dell'applicazione dall'appsettings */
-  private async loadAppData(): Promise<any> {
+  public async loadAppData(): Promise<any> {
+    const path = `assets/data/${this.current_lang}/app-data.json`;
+    console.log('this.current_lang', this.current_lang); 
     const value = await lastValueFrom(
-      this.http_service.get<any>("assets/data/app-data.json")
+      this.http_service.get<any>(path)
     );
     return value;
+  }
+
+  /**Impostazione dei dati utente */
+  public async getUserData() {
+    console.log('ciao')
+    this.current_user = this.appConfig.common.app.current_user ?? 'DEMO';
+    const allAppData = await this.loadAppData();
+    this.appData = allAppData[this.current_user] as any;
   }
 
   /**Caricamento della configurazione dell'app dagli assets */

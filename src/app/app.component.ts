@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TypewriterService } from './shared/services/typeWrite/type-writer-service.service';
 import { lastValueFrom } from 'rxjs';
@@ -15,11 +15,16 @@ export class AppComponent implements OnInit {
   title = 'SmartCv';
   displayedText = '';
 
-  constructor(private common: CommonService) {
+  constructor(private common: CommonService, private cdr: ChangeDetectorRef) {
   }
 
   async ngOnInit() {
     //Operazioni di inizializzazione app 
     if (!this.common.hasAppInit) await this.common.initWebApp();
+  }
+
+  public onLangChanged(lang: string) {
+    this.common.getUserData();
+    this.cdr.detectChanges(); // forza l'aggiornamento
   }
 }

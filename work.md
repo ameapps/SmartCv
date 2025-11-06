@@ -12,3 +12,11 @@ Per poter sia tradurre i dati, sia supportare il multiutente, non potendo senza 
 Sarà così più facile da configurare. 
 Dove nell'app servono i dati tradotti, invece che passare le chiavi i18n direttamente alla view, posso fare in modo che sia costruito un oggetto typescript che sia valorizzato con i dati tradotti. 
 In questo modo, posso aggiungere al file di config del progetto se devono essere usate le traduzioni i18n oppure no e per quale utente devono essere utilizzate.
+
+**idea**
+Occorre eseguire una distinzione tra le stringhe di traduzione di cui ha bisogno l'app per mostrare i testi che non variano al cambiare dell'utente da quelli che variano. 
+Inoltre occorre distiniguere le configurazioni da applicare dai dati. 
+Meglio mettere tutto in file separati.
+
+- esistera un file di config solo per le impostazioni 
+- per ogni lingua e per ogni utente, esisterà un file contenente i dati da mostrare (ES: descrizioni).

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -7,6 +7,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./lang-selector.component.scss']
 })
 export class LangSelectorComponent implements OnInit {
+
+  @Output() onLangChanged = new EventEmitter<string>();
 
   flags: Flag[] = [
     { lang: 'en', img: 'assets/images/icons/langs/EN-US.svg' },
@@ -21,6 +23,7 @@ export class LangSelectorComponent implements OnInit {
   changeLanguage(lang: string): void {
     console.log(`Language changed to: ${lang}`);
     this.translate.use(lang);
+    this.onLangChanged.emit(lang);
   }
 }
 
