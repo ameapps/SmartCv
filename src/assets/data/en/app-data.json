@@ -3,46 +3,46 @@
     "home": {
       "name": "Demo",
       "short_descr": ["CODE WIZARD", "SOFTWARE ENGINEER", "EXPERT AI USER"],
-      "long_descr": "hellooo"
+      "long_descr": "Hi! I'm a passionate full-stack developer with experience in a variety of web technologies. I love creating functional and well-designed applications that deliver outstanding user experiences. In my free time, I enjoy exploring new technologies and working on open-source projects."
     },
     "about": {
-      "short_descr": "Sviluppatore full-stack con una forte passione per il design pulito e il codice ben strutturato. Credo che la semplicità sia la chiave dell’efficienza.",
-      "long_descr": "Mi occupo di sviluppo web da diversi anni, lavorando su progetti che spaziano da applicazioni enterprise a piccole web app sperimentali. Mi piace costruire soluzioni scalabili, mantenibili e facili da usare. Sono curioso per natura e cerco costantemente di migliorarmi, imparando nuove tecnologie e condividendo ciò che imparo con gli altri. Amo la sensazione di vedere un’idea prendere forma riga dopo riga di codice."
+      "short_descr": "Full-stack developer with a strong passion for clean design and well-structured code. I believe simplicity is the key to efficiency.",
+      "long_descr": "I have been working in web development for several years, on projects ranging from enterprise applications to small experimental web apps. I like to build scalable, maintainable, and user-friendly solutions. I'm naturally curious and constantly strive to improve myself by learning new technologies and sharing knowledge with others. I love the feeling of watching an idea take shape line by line of code."
     },
     "contact": {},
     "experience": {
       "list": [
         {
           "title": "Software Engineer",
-          "summary": "Sviluppo di applicazioni backend e servizi REST in ambiente cloud.",
-          "description": "Ho lavorato come sviluppatore full-stack in un team agile, occupandomi principalmente della progettazione e implementazione di microservizi in Node.js e Python, integrazione con database PostgreSQL e deployment su AWS.",
+          "summary": "Development of backend applications and REST services in a cloud environment.",
+          "description": "Worked as a full-stack developer in an agile team, mainly focusing on designing and implementing microservices in Node.js and Python, integrating with PostgreSQL databases, and deploying on AWS.",
           "dateFrom": "2021-03-01",
           "dateTo": "2023-06-30",
-          "country": "Italia"
+          "country": "Italy"
         },
         {
           "title": "Junior Developer",
-          "summary": "Supporto allo sviluppo di software gestionali e manutenzione di sistemi legacy.",
-          "description": "Partecipazione a progetti di refactoring di codice C++/MFC, gestione di bug fixing e sviluppo di nuove funzionalità per moduli di reportistica. Collaborazione con il team QA per test funzionali.",
+          "summary": "Support in the development of management software and maintenance of legacy systems.",
+          "description": "Participated in C++/MFC code refactoring projects, bug fixing, and development of new features for reporting modules. Collaborated with the QA team for functional testing.",
           "dateFrom": "2019-09-01",
           "dateTo": "2021-02-28",
-          "country": "Italia"
+          "country": "Italy"
         },
         {
           "title": "Intern - Embedded Systems",
-          "summary": "Stage su sistemi embedded e comunicazione tra dispositivi IoT.",
-          "description": "Progettazione e implementazione di un prototipo basato su ESP32 con comunicazione MQTT per il monitoraggio di parametri ambientali. Documentazione tecnica e presentazione del progetto al dipartimento R&D.",
+          "summary": "Internship on embedded systems and IoT device communication.",
+          "description": "Designed and implemented a prototype based on ESP32 with MQTT communication for environmental parameter monitoring. Produced technical documentation and presented the project to the R&D department.",
           "dateFrom": "2019-01-01",
           "dateTo": "2019-06-30",
-          "country": "Italia"
+          "country": "Italy"
         },
         {
           "title": "Freelance Consultant",
-          "summary": "Consulenza su architetture software e integrazione di sistemi distribuiti.",
-          "description": "Attività di analisi e sviluppo di middleware per la comunicazione tra applicazioni legacy e piattaforme cloud. Supporto tecnico per la migrazione di database e ottimizzazione delle prestazioni.",
+          "summary": "Consulting on software architectures and distributed system integration.",
+          "description": "Analysis and development of middleware for communication between legacy applications and cloud platforms. Provided technical support for database migration and performance optimization.",
           "dateFrom": "2023-07-01",
           "dateTo": "",
-          "country": "Italia"
+          "country": "Italy"
         }
       ]
     },
@@ -52,25 +52,25 @@
           "image": "https://cdn.worldvectorlogo.com/logos/next-js.svg",
           "link": "https://nextjs.org/",
           "name": "Next.js",
-          "description": "Framework React open source per la creazione di applicazioni web con rendering lato server (SSR)."
+          "description": "Open-source React framework for building web applications with server-side rendering (SSR)."
         },
         {
           "image": "https://angular.io/assets/images/logos/angular/angular.svg",
           "link": "https://angular.dev/",
           "name": "Angular",
-          "description": "Framework frontend sviluppato da Google per la creazione di applicazioni web dinamiche e modulari."
+          "description": "Frontend framework developed by Google for creating dynamic and modular web applications."
         },
         {
           "image": "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg",
           "link": "https://getbootstrap.com/",
           "name": "Bootstrap",
-          "description": "Libreria CSS open source per lo sviluppo di interfacce web responsive e moderne."
+          "description": "Open-source CSS library for developing responsive and modern web interfaces."
         },
         {
           "image": "https://openlayers.org/theme/img/logo-light.svg",
           "link": "https://openlayers.org/",
           "name": "OpenLayers",
-          "description": "Libreria JavaScript per visualizzare mappe interattive in applicazioni web.",
+          "description": "JavaScript library for displaying interactive maps in web applications.",
           "isClicked": false,
           "isHovering": false
         },
@@ -78,29 +78,29 @@
           "image": "https://leafletjs.com/docs/images/logo.png",
           "link": "https://leafletjs.com/",
           "name": "Leaflet",
-          "description": "Libreria leggera per mappe interattive compatibile con tutti i principali browser e piattaforme."
+          "description": "Lightweight library for interactive maps compatible with all major browsers and platforms."
         },
         {
           "image": "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
           "link": "https://nodejs.org/",
           "name": "Node.js",
-          "description": "Ambiente di runtime JavaScript lato server basato sul motore V8 di Chrome."
+          "description": "Server-side JavaScript runtime environment built on Chrome’s V8 engine."
         }
       ]
     },
     "skills": {
-      "long_descr": "Eccello nel scomporre problemi complessi in compiti gestibili, essenziale per creare codice robusto e manutenibile in progetti di grande scala. Sono motivato dalle sfide, sempre alla ricerca di opportunità per migliorare le mie competenze. Il mio approccio autodidatta mi permette di comprendere e adattarmi rapidamente a nuove tecnologie in modo autonomo."
+      "long_descr": "I excel at breaking down complex problems into manageable tasks, which is essential for creating robust and maintainable code in large-scale projects. I’m driven by challenges and always seek opportunities to improve my skills. My self-taught approach allows me to quickly understand and adapt to new technologies independently."
     }
   },
   "STEAME": {
     "home": {
       "name": "Stefano",
       "short_descr": ["CODE WIZARD", "SOFTWARE ENGINEER", "EXPERT AI USER"],
-      "long_descr": "Programmatore autodidatta, motivato dalla passione e da progetti personali. Esperto nell’individuare bug tramite ricerche mirate su Google e nel selezionare rapidamente le soluzioni più efficaci su StackOverflow."
+      "long_descr": "Self-taught programmer driven by passion and personal projects. Skilled at finding bugs through targeted Google searches and quickly identifying the most effective solutions on StackOverflow."
     },
     "about": {
-      "short_descr": "Ingegnere del software con oltre 6 anni di esperienza. Sviluppatore a tempo pieno e fiero creatore di bug.",
-      "long_descr": "Appassionato di informatica fin da bambino. Ho trascorso oltre 5 anni affinando le mie competenze attraverso progetti diversi. Fin da quando avevo 9 anni amo l'informatica. Questo interesse è diventato una vera carriera in cui continuo a imparare e a tenermi aggiornato con la tecnologia. Mi piace imparare facendo, non guardando tutorial. Nel corso degli anni ho sviluppato autonomamente numerosi progetti open source per sperimentare con una vasta gamma di tecnologie."
+      "short_descr": "Software engineer with over 6 years of experience. Full-time developer and proud bug creator.",
+      "long_descr": "Passionate about computers since childhood. I’ve spent over 5 years honing my skills through diverse projects. Since I was 9, I’ve loved computer science. This passion turned into a real career where I continue to learn and stay updated with technology. I prefer learning by doing rather than just watching tutorials. Over the years, I’ve independently developed numerous open-source projects to experiment with a wide range of technologies."
     },
     "contact": {},
     "experience": {
@@ -108,15 +108,15 @@
         {
           "title": "ZInformatica",
           "summary": "Asp .NET MVC",
-          "description": "Sviluppo e manutenzione di applicazioni web basate su ASP.NET MVC, con particolare attenzione alla progettazione di architetture scalabili e sicure. Implementazione di logiche di business e interfacce utente responsive. Integrazione con database relazionali e servizi esterni. Collaborazione con il team per ottimizzare performance e usabilità.",
+          "description": "Development and maintenance of web applications based on ASP.NET MVC, focusing on designing scalable and secure architectures. Implementation of business logic and responsive user interfaces. Integration with relational databases and external services. Collaboration with the team to optimize performance and usability.",
           "dateFrom": "mm/yy",
           "dateTo": "mm/yy",
           "country": "Italy"
         },
         {
           "title": "LHub",
-          "summary": "Wordpress; HTML & CSS",
-          "description": "Realizzazione e personalizzazione di siti web su piattaforma WordPress, curando sia la parte tecnica che quella estetica. Sviluppo di temi e plugin custom. Ottimizzazione SEO on-page e miglioramento delle performance di caricamento. Utilizzo di HTML5 e CSS3 per garantire design responsive e compatibilità cross-browser.",
+          "summary": "WordPress; HTML & CSS",
+          "description": "Creation and customization of websites on the WordPress platform, focusing on both technical and aesthetic aspects. Development of custom themes and plugins. On-page SEO optimization and performance improvement. Use of HTML5 and CSS3 to ensure responsive design and cross-browser compatibility.",
           "dateFrom": "mm/yy",
           "dateTo": "mm/yy",
           "country": "Italy"
@@ -124,15 +124,15 @@
         {
           "title": "Artiso",
           "summary": "React, WPF",
-          "description": "Partecipazione a progetti internazionali focalizzati sullo sviluppo di interfacce moderne e performanti. Creazione di single-page applications (SPA) con React. Sviluppo di applicazioni desktop con Windows Presentation Foundation (WPF). Integrazione di API REST e gestione dello stato applicativo. Collaborazione in team agile, con attenzione a qualità del codice e test automatizzati.",
+          "description": "Participation in international projects focused on developing modern and high-performance interfaces. Creation of single-page applications (SPA) using React. Development of desktop applications with Windows Presentation Foundation (WPF). Integration of REST APIs and state management. Worked in an agile team with emphasis on code quality and automated testing.",
           "dateFrom": "mm/yy",
           "dateTo": "mm/yy",
           "country": "Germany"
         },
         {
           "title": "Softech",
-          "summary": "Angular, Ionic, .NET core, Sql server, postGreSQL",
-          "description": "Sviluppo full-stack di soluzioni enterprise e mobile, con tecnologie moderne e orientate alla scalabilità. Creazione di applicazioni web con Angular e mobile cross-platform con Ionic. Implementazione di API RESTful e servizi backend in .NET Core. Progettazione e gestione di database complessi (SQL Server, PostgreSQL). Ottimizzazione delle query e tuning delle performance. Partecipazione a processi di CI/CD e metodologie Agile/Scrum.",
+          "summary": "Angular, Ionic, .NET Core, SQL Server, PostgreSQL",
+          "description": "Full-stack development of enterprise and mobile solutions using modern, scalable technologies. Creation of web applications with Angular and cross-platform mobile apps with Ionic. Implementation of RESTful APIs and backend services in .NET Core. Design and management of complex databases (SQL Server, PostgreSQL). Query optimization and performance tuning. Participation in CI/CD processes and Agile/Scrum methodologies.",
           "dateFrom": "mm/yy",
           "dateTo": "mm/yy",
           "country": "Italy"
@@ -145,24 +145,24 @@
           "image": "https://github.com/ameapps/SharedLogin/blob/master/src/assets/images/products/WordleClone/vect.png?raw=true",
           "link": "https://ameapps.github.io/WordleCloneV2/",
           "name": "WordleClone",
-          "description": "App che simula il gioco Wordle"
+          "description": "App that simulates the Wordle game"
         },
         {
           "image": "https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/SportTracker/vect.svg",
           "link": "https://ameapps.github.io/SportTracker/#/menu/homepage",
           "name": "SportMonitoring",
-          "description": "App per il monitoraggio delle attività sportive e del cibo assunto"
+          "description": "App for tracking sports activities and food intake"
         },
         {
           "image": "https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/GameScopa/vect.svg",
           "link": "https://ameapps.github.io/GameScopa",
           "name": "GameScopa",
-          "description": "Celebre gioco di carte italiano"
+          "description": "Famous Italian card game"
         }
       ]
     },
     "skills": {
-      "long_descr": "Eccello nel scomporre problemi complessi in compiti gestibili, essenziale per creare codice robusto e manutenibile in progetti di grande scala. Sono motivato dalle sfide, sempre alla ricerca di opportunità per migliorare le mie competenze. Il mio approccio autodidatta mi permette di comprendere e adattarmi rapidamente a nuove tecnologie in modo autonomo."
+      "long_descr": "I excel at breaking down complex problems into manageable tasks, which is essential for creating robust and maintainable code in large-scale projects. I’m driven by challenges and always seek opportunities to improve my skills. My self-taught approach allows me to quickly understand and adapt to new technologies independently."
     }
   }
 }

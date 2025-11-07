@@ -2,7 +2,7 @@
   "DEMO": {
     "home": {
       "name": "Demo",
-      "short_descr": ["CODE WIZARD", "SOFTWARE ENGINEER", "EXPERT AI USER"],
+      "short_descr": ["MAGO DEL CODICE", "INGEGNERE DEL SOFTWARE", "ESPERTO UTILIZZATORE DI IA"],
       "long_descr": "Ciao! Sono un appassionato sviluppatore full-stack con esperienza in una varietà di tecnologie web. Amo creare applicazioni funzionali e ben progettate che offrono esperienze utente eccezionali. Nel mio tempo libero, mi piace esplorare nuove tecnologie e lavorare su progetti open source."
     },
     "about": {
