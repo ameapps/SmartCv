@@ -10,14 +10,15 @@ import { CommonService } from 'src/app/shared/services/common/common.service';
 })
 export class AboutComponent implements OnInit {
 
-  public userAbout!: AppDataAbout;
+  public get userAbout(): AppDataAbout {
+    return this.common.appData.about;
+  }
 
   constructor(private common: CommonService, private translate: TranslateService) { }
 
   async ngOnInit(): Promise<void> {
     //Operazioni di inizializzazione app 
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    this.userAbout = this.common.appData.about;
   }
 
 }

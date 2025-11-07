@@ -13,7 +13,9 @@ import { TypewriterService } from 'src/app/shared/services/typeWrite/type-writer
 })
 export class HomeComponent implements OnInit {
 
-  public homeTexts!: AppDataHome;
+  get homeTexts(): AppDataHome {
+    return this.common.appData.home;
+  }
 
   constructor(
     private translate: TranslateService, 
@@ -41,7 +43,6 @@ export class HomeComponent implements OnInit {
   
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    this.homeTexts = this.common.appData.home;
   }
 
   /**Method opening the given linkedIn profile! */

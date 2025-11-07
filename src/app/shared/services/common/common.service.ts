@@ -48,7 +48,6 @@ export class CommonService {
 
   /**Impostazione dei dati utente */
   public async getUserData() {
-    console.log('ciao')
     this.current_user = this.appConfig.common.app.current_user ?? 'DEMO';
     const allAppData = await this.loadAppData();
     this.appData = allAppData[this.current_user] as any;
