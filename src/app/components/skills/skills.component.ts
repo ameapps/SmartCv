@@ -9,14 +9,15 @@ import { CommonService } from 'src/app/shared/services/common/common.service';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-
-  userSkills!: AppDataSkills;
+  get userSkills(): AppDataSkills {
+    return this.common.appData.skills;
+  };
 
   constructor(private common: CommonService, private translate: TranslateService) { }
 
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    this.userSkills = this.common.appData.skills;
+    
   }
 
 }

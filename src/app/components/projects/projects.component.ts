@@ -9,16 +9,18 @@ import { CommonService } from 'src/app/shared/services/common/common.service';
 })
 export class ProjectsComponent implements OnInit {
 
-  userProjects: AppDataProject[] = [];
   showDialog = false;
   dialogData: any = null;
   private longPressTimeouts: any[] = [];
+  get userProjects(): AppDataProject[] {
+    return this.common.appData.projects.list;
+  }
 
   constructor(private common: CommonService) {}
 
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    this.userProjects = this.common.appData.projects.list;
+    
   }
 
   onHoverProject(project: AppDataProject) {

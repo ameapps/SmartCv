@@ -8,19 +8,20 @@ import { CommonService } from "src/app/shared/services/common/common.service";
   styleUrls: ["./experience.component.scss"],
 })
 export class ExperienceComponent implements OnInit {
-  userExperiences: AppDataExperienceWorks[] = [];
   showDialog = false;
   dialogData: any = null;
   private longPressTimeouts: any[] = [];
   public get currentYear() {
     return new Date().getFullYear();
   }
+  public get userExperiences(): AppDataExperienceWorks[] {
+    return this.common.appData.experience.list;
+  }
 
   constructor(private common: CommonService) {}
 
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    this.userExperiences = this.common.appData.experience.list;
   }
 
   onClickDot(experience: AppDataExperienceWorks) {
