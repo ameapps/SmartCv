@@ -17,6 +17,10 @@ export class AboutComponent implements OnInit {
     private common: CommonService,
     private translate: TranslateService
   ) {
+    this.subscribe();
+  }
+
+  private subscribe() {
     this.translate.onLangChange.subscribe(() => {
       setTimeout(() => {
         // L'esecuz. dell'evento costringe la view a controllare i bindings; riassegnare un array cambia il riferimento.

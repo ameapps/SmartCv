@@ -21,7 +21,7 @@ export class SkillsComponent implements OnInit {
     this.translate.onLangChange.subscribe(() => {
       setTimeout(() => {
         // L'esecuz. dell'evento costringe la view a controllare i bindings; riassegnare un array cambia il riferimento.
-        this.texts = [this.translate.instant("PAGES.ABOUT.TITLE")];
+        this.texts = [this.translate.instant("PAGES.SKILLS.TITLE")];
         if (this.common?.appData?.skills != null)
           //Attendo che il file json sia stato ricaricato
           this.userSkills = deepClone(this.common.appData.skills);
@@ -30,6 +30,7 @@ export class SkillsComponent implements OnInit {
   }
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
+    this.texts = [this.translate.instant("PAGES.SKILLS.TITLE")];
     this.userSkills = deepClone(this.common.appData.skills);
 
   }
