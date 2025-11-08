@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { deepClone } from 'src/app/shared/helpers/object.helper';
 import { AppDataContact, AppDataSkills } from 'src/app/shared/models/appData';
 import { CommonService } from 'src/app/shared/services/common/common.service';
 
@@ -9,15 +10,28 @@ import { CommonService } from 'src/app/shared/services/common/common.service';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-  get userSkills(): AppDataSkills {
-    return this.common.appData.skills;
-  };
+  userSkills: AppDataSkills = new AppDataSkills();
+  texts = ['SKILLS'];
 
-  constructor(private common: CommonService, private translate: TranslateService) { }
+  constructor(private common: CommonService, private translate: TranslateService) {
+    this.subscribe();
+  }
 
+  private subscribe() {
+    this.translate.onLangChange.subscribe(() => {
+      setTimeout(() => {
+        // L'esecuz. dell'evento costringe la view a controllare i bindings; riassegnare un array cambia il riferimento.
+        this.texts = [this.translate.instant("PAGES.ABOUT.TITLE")];
+        if (this.common?.appData?.skills != null)
+          //Attendo che il file json sia stato ricaricato
+          this.userSkills = deepClone(this.common.appData.skills);
+      }, 100);
+    });
+  }
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
-    
+    this.userSkills = deepClone(this.common.appData.skills);
+
   }
 
 }

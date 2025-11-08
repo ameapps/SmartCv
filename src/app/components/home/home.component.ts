@@ -17,30 +17,8 @@ export class HomeComponent implements OnInit {
     return this.common.appData.home;
   }
 
-  constructor(
-    private translate: TranslateService, 
-    public common: CommonService, 
-    private typewriterService: 
-    TypewriterService, 
-    private router: Router
-  ) { }
+  constructor(public common: CommonService) { }
 
-  async cycleTexts(): Promise<void> {
-    const texts = [
-      'CODE WIZARD',
-      'SOFTWARE ENGINEER',
-      'EXPERT AI USER'
-    ];
-    let index = 0;
-    //Eseguo la scrittura del testo in loop 
-    const loop = async () => {
-      index = (index + 1) % texts.length;
-      setTimeout(loop, 1000); // tempo di pausa dopo la scrittura, non fissa
-    };
-    // inizia il ciclo
-    loop(); 
-  }
-  
   async ngOnInit(): Promise<void> {
     if (!this.common.hasAppInit) await this.common.initWebApp();
   }
