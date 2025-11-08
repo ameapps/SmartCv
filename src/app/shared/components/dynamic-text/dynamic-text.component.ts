@@ -29,6 +29,10 @@ export class DynamicTextComponent implements OnInit, OnChanges, AfterViewInit {
 
   ngOnChanges(changes: SimpleChanges): void {
     if(changes['config']) this.applyConfig(); 
+    if (changes['texts']) {
+      console.log("Texts changed in dynamic text component:", this.texts);
+      this.scrambleText();
+    }
   }
 
   async ngOnInit(): Promise<void> {
