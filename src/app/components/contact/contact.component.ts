@@ -3,6 +3,7 @@ import { CommonService } from 'src/app/shared/services/common/common.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { deepClone } from 'src/app/shared/helpers/object.helper';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,7 @@ export class ContactComponent implements OnInit, OnDestroy {
 
   public texts = ["CONTACTS"];
   emailForm: FormGroup;
-  sub: any;
+  sub!: Subscription;
 
   constructor(private fb: FormBuilder, private translate: TranslateService) {
     this.emailForm = this.fb.group({
