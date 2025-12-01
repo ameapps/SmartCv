@@ -1,0 +1,46 @@
+<div class="container">
+  <!-- Parte superiore -->
+  <div class="up">
+    <!-- Testo skills -->
+    <div class="text-box">
+      <app-dynamic-text [texts]="texts" [config]="'hover-title'" [cyclesLimit]="1"></app-dynamic-text>
+      <span class="skills-bracket">{{ "{ " }}</span>
+    </div>
+  </div>
+  <!-- Parte inferiore -->
+  <div class="down">
+    <form [formGroup]="emailForm" (ngSubmit)="onSubmit()" class="form-container">
+      <div>
+        <label> {{ "PAGES.CONTACT.EMAIL" | translate }}</label>
+        <input type="email" formControlName="to" placeholder="esempio@mail.com" />
+        <label class="label-wrong" *ngIf="emailForm.get('to')?.invalid && emailForm.get('to')?.touched">
+          {{ "PAGES.CONTACT.EMAIL_VALID" | translate }}
+        </label>
+      </div>
+
+      <div>
+        <label>{{ "PAGES.CONTACT.SUBJECT" | translate }}</label>
+        <input type="text" formControlName="subject" />
+        <label class="label-wrong" *ngIf="emailForm.get('subject')?.invalid && emailForm.get('subject')?.touched">
+          {{ "PAGES.CONTACT.SUBJECT_MANDATORY" | translate }}
+        </label>
+      </div>
+
+      <div>
+        <label>{{ "PAGES.CONTACT.MESSAGE" | translate }}</label>
+        <textarea rows="5" formControlName="message"></textarea>
+        <label class="label-wrong" *ngIf="emailForm.get('message')?.invalid && emailForm.get('message')?.touched">
+          {{ "PAGES.CONTACT.MESSAGE_MANDATORY" | translate }}
+        </label>
+      </div>
+
+      <button class="submit-button" type="submit" [disabled]="emailForm.invalid">{{ "PAGES.CONTACT.SEND" | translate
+        }}</button>
+    </form>
+
+  </div>
+  <!-- Chiusa parentesi -->
+  <div class="final-bracket">
+    <span class="skills-bracket"> {{ "}" }} </span>
+  </div>
+</div>

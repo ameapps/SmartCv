@@ -1,0 +1,22 @@
+<div class="container" *ngIf="this.userAbout != null">
+  <div class="left">
+    <!-- Testo skills -->
+    <div class="text-box">      
+      <app-dynamic-text 
+        [texts]="texts"
+        [config]="'hover-title'"
+        [cyclesLimit]="1"
+      ></app-dynamic-text>
+      <span class="about-bracket">{{ '{ ' }}</span>
+      <p class="about-text">
+        {{ userAbout.short_descr }}
+      </p>
+      <span class="about-bracket"> {{ '}' }} </span>
+    </div>
+  </div>
+  <div class="right">
+    <p id="about-descr" class="about-text">
+      {{ userAbout.long_descr }}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="drag" *ngIf="canShowDragText">DRAG ANYWHERE</div>
+  <div class="menu">
+    <span class="text">
+      <span class="inner-text" routerLink="/about">
+        <span class="number">0. </span>
+        {{"HEADER.ABOUT" | translate}}</span></span
+    >
+    <span class="text">
+      <span class="inner-text" routerLink="/skills">
+        <span class="number">1. </span>
+        {{"HEADER.SKILLS" | translate
+      }}</span></span
+    >
+    <span class="text">
+      <span class="inner-text" routerLink="/experiences">
+        <span class="number">2. </span>
+        {{"HEADER.WORK" | translate
+      }}</span></span
+    >
+    <span class="text">
+      <span class="inner-text" routerLink="/projects">
+        <span class="number">3. </span>
+        {{"HEADER.PROJECT" | translate
+      }}</span></span
+    >
+    <span class="text">
+      <span class="inner-text" routerLink="/contacts">
+        <span class="number">4. </span>
+        {{"HEADER.CONTACT" | translate
+      }}</span></span
+    >
+    <span class="text">
+      <span class="inner-text">
+        <span class="number">5. </span>
+        {{ "HEADER.CV" | translate }}</span></span
+    >
+  </div>
+</div>
+

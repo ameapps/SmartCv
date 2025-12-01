@@ -1,0 +1,19 @@
+{
+  "common": {
+    "app": {
+      "current_user": "DEMO",
+      "app_data": "assets"
+    },
+    "header": {
+      "can_show_drag_text": false
+    }
+  },
+  "pages": {
+    "home": {},
+    "about": {},
+    "contact": {},
+    "experience": {},
+    "project": {},
+    "skills": {}
+  }
+}

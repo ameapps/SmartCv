@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="text-box">
+    <app-dynamic-text 
+      [texts]="[this.common.appData.home.name]"
+      [config]="'intro-title'"
+    ></app-dynamic-text>
+    <!-- Testo corto -->
+    <app-dynamic-text 
+      class="short-text"
+      [texts]="this.homeTexts.short_descr"
+      [config]="'short-text'"
+    ></app-dynamic-text>
+    <p id="long-descr" class="text">
+      {{ this.homeTexts.long_descr | translate }} 
+    </p>
+    <div class="buttons">
+      <button id="contact" routerLink="/contacts">{{ 'PAGES.HOME.CONTACT_ME' | translate}}</button>
+      <button id="learn" (click)="learnMore()">{{ 'PAGES.HOME.LEARN' | translate}}</button>
+    </div>
+  </div>
+  <div class="effect"></div>
+</div>
