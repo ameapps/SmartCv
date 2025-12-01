@@ -32,5 +32,4 @@ yarn-error.log*
 .git DEMO.zip
 .git DEV.zip
 src\assets\firebase
-docs
 tools
