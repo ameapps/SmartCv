@@ -1,0 +1,51 @@
+{
+    "HEADER": {
+        "ABOUT": "Chi sono",
+        "SKILLS": "Competenze",
+        "WORK": "Esperienze",
+        "PROJECT": "Progetti",
+        "CONTACT": "Contatti",
+        "CV": "CV"
+    },
+    "PAGES": {
+        "HOME": {
+            "SHORT_DESCR": "",
+            "LONG_DESCR": "Programmatore autodidatta, motivato dalla passione e da progetti personali. Esperto nell’individuare bug tramite ricerche mirate su Google e nel selezionare rapidamente le soluzioni più efficaci su StackOverflow.",
+            "DYNAMIC": {
+                "TEXT_1": "MAGO DEL CODICE",
+                "TEXT_2": "INGEGNERE DEL SOFTWARE",
+                "TEXT_3": "ESPERTO UTILIZZATORE DI IA"
+            },            
+            "CONTACT_ME": "Contattami",
+            "LEARN": "Scopri di più"
+        },
+        "ABOUT": {
+            "TITLE": "CHI SONO",
+            "SHORT_DESCR": "Ingegnere del software con oltre 6 anni di esperienza. Sviluppatore a tempo pieno e fiero creatore di bug.",
+            "LONG_DESCR": "Appassionato di informatica fin da bambino. Ho trascorso oltre 5 anni affinando le mie competenze attraverso progetti diversi. Fin da quando avevo 9 anni amo l'informatica. Questo interesse è diventato una vera carriera in cui continuo a imparare e a tenermi aggiornato con la tecnologia. Mi piace imparare facendo, non guardando tutorial. Nel corso degli anni ho sviluppato autonomamente numerosi progetti open source per sperimentare con una vasta gamma di tecnologie."
+        },
+        "CONTACT": {
+            "TITLE": "CONTATTAMI",
+            "EMAIL": "La tua email",
+            "EMAIL_VALID": "Inserisci una email valida",
+            "SUBJECT": "Soggetto",
+            "SUBJECT_MANDATORY": "Il soggetto è obbligatorio",
+            "MESSAGE": "Messaggio",
+            "MESSAGE_MANDATORY": "Il messaggio è obbligatorio",
+            "SEND": "Invia"
+        },
+        "EXPERIENCE": {
+            "TITLE": "ESPERIENZE",
+            "LONG_DESCR": "Ho avuto l'opportunità di lavorare per diverse aziende, dalle piccole startup alle grandi aziende, utilizzando tecnologie diverse. Ogni esperienza mi ha insegnato qualcosa e ho migliorato costantemente il mio percorso di apprendimento."
+        },
+        "PROJECTS": {
+            "TITLE": "PROGETTI",
+            "SHORT_DESCR": "Experiences",
+            "LONG_DESCR": ""
+        },
+        "SKILLS": {
+            "TITLE": "COMPETENZE",
+            "LONG_DESCR": "Eccello nel scomporre problemi complessi in compiti gestibili, essenziale per creare codice robusto e manutenibile in progetti di grande scala. Sono motivato dalle sfide, sempre alla ricerca di opportunità per migliorare le mie competenze. Il mio approccio autodidatta mi permette di comprendere e adattarmi rapidamente a nuove tecnologie in modo autonomo."
+        }
+    }
+}

@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="left">
+    <!-- Testo skills -->
+    <div class="text-box">
+      <app-dynamic-text 
+        [texts]="texts"
+        [config]="'hover-title'"
+        [cyclesLimit]="1"
+      ></app-dynamic-text>
+      <span class="skills-bracket">{{ '{ ' }}</span>
+      <p class="skills-text">
+        {{ userSkills.long_descr }}
+      </p>
+      <span class="skills-bracket"> {{ '}' }} </span>
+    </div>
+  </div>
+  <div class="right">
+    <!-- Linguaggi di programmazione -->
+    <div class="languages">
+      <div class="langs-left">
+        <div class="lang">
+          <img src="assets/images/icons/ts.svg" alt="no-image">
+          <p class="text">Typescript</p>
+        </div>
+
+        <div class="lang">
+          <img src="assets/images/icons/js.svg" alt="no-image">
+          <p class="text">Javascript</p>
+        </div>
+
+        <div class="lang">
+          <img src="assets/images/icons/dot net core.svg" alt="no-image">
+          <p class="text">.NET core</p>
+        </div>
+
+        <div class="lang">
+          <img src="assets/images/icons/github.svg" alt="no-image">
+          <p class="text">Git</p>
+        </div>
+      </div>
+      <!-- Linea di separazione -->
+      <div class="line"></div>
+      <div class="langs-right">
+        <div class="lang">
+          <img src="assets/images/icons/html.svg" alt="no-image">
+          <p class="text">HTML</p>
+        </div>
+        <div class="lang">
+          <img src="assets/images/icons/angular.svg" alt="no-image">
+          <p class="text">Angular</p>
+        </div>
+        <div class="lang">
+          <img src="assets/images/icons/node.svg" alt="no-image">
+          <p class="text">Node.js</p>
+        </div>
+        <div class="lang">
+          <img src="assets/images/icons/docker.svg" alt="no-image">
+          <p class="text">Docker</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

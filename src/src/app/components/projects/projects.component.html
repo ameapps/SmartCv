@@ -1,0 +1,29 @@
+<div class="container">
+  <!-- Parte superiore -->
+  <div class="up">
+    <!-- Testo skills -->
+    <div class="text-box">
+      <app-dynamic-text [texts]="texts" [config]="'hover-title'" [cyclesLimit]="1"></app-dynamic-text>
+      <span class="skills-bracket">{{ "{ " }}</span>
+    </div>
+  </div>
+  <!-- Parte inferiore -->
+  <div class="down">
+    <div *ngFor="let project of userProjects" class="outer-box" (mouseenter)="onHoverProject(project)"
+      (mouseleave)="onHoverProject(project)" (click)="onClickProject(project)"
+      [ngClass]="project.isHovering? 'project-border' : ''">
+      <div class="inner-box">
+        <img class="app-logo" [src]="project.image" />
+        <app-dynamic-text (mouseleave)="onHoverProject(project)" class="name" [texts]="[project.name]"
+          [config]="'hover-title'" [cyclesLimit]="1" [style]="{
+              fontSize: '36px'
+            }"></app-dynamic-text>
+        <div (mouseleave)="onHoverProject(project)" class="descr">{{ project.description }}</div>
+      </div>
+    </div>
+  </div>
+  <!-- Chiusa parentesi -->
+  <div class="final-bracket">
+    <span class="skills-bracket"> {{ "}" }} </span>
+  </div>
+</div>

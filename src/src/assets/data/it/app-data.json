@@ -1,0 +1,103 @@
+{
+  "config": {
+    "lang": "it"
+  },
+  "USER": {
+    "home": {
+      "name": "Demo",
+      "short_descr": [
+        "MAGO DEL CODICE",
+        "INGEGNERE DEL SOFTWARE",
+        "ESPERTO UTILIZZATORE DI IA"
+      ],
+      "long_descr": "Ciao! Sono un appassionato sviluppatore full-stack con esperienza in una varietà di tecnologie web. Amo creare applicazioni funzionali e ben progettate che offrono esperienze utente eccezionali. Nel mio tempo libero, mi piace esplorare nuove tecnologie e lavorare su progetti open source."
+    },
+    "about": {
+      "short_descr": "Sviluppatore full-stack con una forte passione per il design pulito e il codice ben strutturato. Credo che la semplicità sia la chiave dell’efficienza.",
+      "long_descr": "Mi occupo di sviluppo web da diversi anni, lavorando su progetti che spaziano da applicazioni enterprise a piccole web app sperimentali. Mi piace costruire soluzioni scalabili, mantenibili e facili da usare. Sono curioso per natura e cerco costantemente di migliorarmi, imparando nuove tecnologie e condividendo ciò che imparo con gli altri. Amo la sensazione di vedere un’idea prendere forma riga dopo riga di codice."
+    },
+    "contact": {},
+    "experience": {
+      "long_descr": "Ho avuto l'opportunità di lavorare per diverse aziende, dalle piccole startup alle grandi aziende, utilizzando tecnologie diverse. Ogni esperienza mi ha insegnato qualcosa e ho migliorato costantemente il mio percorso di apprendimento.",
+      "list": [
+        {
+          "title": "Software Engineer",
+          "summary": "Sviluppo di applicazioni backend e servizi REST in ambiente cloud.",
+          "description": "Ho lavorato come sviluppatore full-stack in un team agile, occupandomi principalmente della progettazione e implementazione di microservizi in Node.js e Python, integrazione con database PostgreSQL e deployment su AWS.",
+          "dateFrom": "2021-03-01",
+          "dateTo": "2023-06-30",
+          "country": "Italia"
+        },
+        {
+          "title": "Junior Developer",
+          "summary": "Supporto allo sviluppo di software gestionali e manutenzione di sistemi legacy.",
+          "description": "Partecipazione a progetti di refactoring di codice C++/MFC, gestione di bug fixing e sviluppo di nuove funzionalità per moduli di reportistica. Collaborazione con il team QA per test funzionali.",
+          "dateFrom": "2019-09-01",
+          "dateTo": "2021-02-28",
+          "country": "Italia"
+        },
+        {
+          "title": "Intern - Embedded Systems",
+          "summary": "Stage su sistemi embedded e comunicazione tra dispositivi IoT.",
+          "description": "Progettazione e implementazione di un prototipo basato su ESP32 con comunicazione MQTT per il monitoraggio di parametri ambientali. Documentazione tecnica e presentazione del progetto al dipartimento R&D.",
+          "dateFrom": "2019-01-01",
+          "dateTo": "2019-06-30",
+          "country": "Italia"
+        },
+        {
+          "title": "Freelance Consultant",
+          "summary": "Consulenza su architetture software e integrazione di sistemi distribuiti.",
+          "description": "Attività di analisi e sviluppo di middleware per la comunicazione tra applicazioni legacy e piattaforme cloud. Supporto tecnico per la migrazione di database e ottimizzazione delle prestazioni.",
+          "dateFrom": "2023-07-01",
+          "dateTo": "",
+          "country": "Italia"
+        }
+      ]
+    },
+    "projects": {
+      "list": [
+        {
+          "image": "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+          "link": "https://nextjs.org/",
+          "name": "Next.js",
+          "description": "Framework React open source per la creazione di applicazioni web con rendering lato server (SSR)."
+        },
+        {
+          "image": "https://angular.io/assets/images/logos/angular/angular.svg",
+          "link": "https://angular.dev/",
+          "name": "Angular",
+          "description": "Framework frontend sviluppato da Google per la creazione di applicazioni web dinamiche e modulari."
+        },
+        {
+          "image": "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg",
+          "link": "https://getbootstrap.com/",
+          "name": "Bootstrap",
+          "description": "Libreria CSS open source per lo sviluppo di interfacce web responsive e moderne."
+        },
+        {
+          "image": "https://openlayers.org/theme/img/logo-light.svg",
+          "link": "https://openlayers.org/",
+          "name": "OpenLayers",
+          "description": "Libreria JavaScript per visualizzare mappe interattive in applicazioni web.",
+          "isClicked": false,
+          "isHovering": false
+        },
+        {
+          "image": "https://leafletjs.com/docs/images/logo.png",
+          "link": "https://leafletjs.com/",
+          "name": "Leaflet",
+          "description": "Libreria leggera per mappe interattive compatibile con tutti i principali browser e piattaforme."
+        },
+        {
+          "image": "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+          "link": "https://nodejs.org/",
+          "name": "Node.js",
+          "description": "Ambiente di runtime JavaScript lato server basato sul motore V8 di Chrome."
+        }
+      ]
+    },
+    "skills": {
+      "long_descr": "Eccello nel scomporre problemi complessi in compiti gestibili, essenziale per creare codice robusto e manutenibile in progetti di grande scala. Sono motivato dalle sfide, sempre alla ricerca di opportunità per migliorare le mie competenze. Il mio approccio autodidatta mi permette di comprendere e adattarmi rapidamente a nuove tecnologie in modo autonomo."
+    }
+  }
+}

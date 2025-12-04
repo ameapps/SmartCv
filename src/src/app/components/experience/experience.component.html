@@ -1,0 +1,60 @@
+<div class="container">
+  <!-- Parte superiore -->
+  <div class="up">
+    <!-- Testo skills -->
+    <div class="text-box">      
+      <app-dynamic-text 
+        [texts]="texts"
+        [config]="'hover-title'"
+        [cyclesLimit]="1"
+      ></app-dynamic-text>
+      <span class="skills-bracket">{{ "{ " }}</span>
+      <p class="skills-text">
+        {{ long_descr }}
+      </p>
+    </div>
+  </div>
+  <!-- Parte inferiore -->
+  <div class="down">
+    <div class="text">2019</div>
+    <div class="line-container">
+      <div class="line"></div>
+      <div class="dots-line">
+        <div class="dot-container" *ngFor="let exp of userExperiences; let i = index">
+          <div
+            class="dot"
+            (mousedown)="onDotPress(exp, i)"
+            (mouseup)="onDotRelease(exp, i)"
+            (mouseleave)="onDotRelease(exp, i)"
+            (touchstart)="onDotPress(exp, i)"
+            (touchend)="onDotRelease(exp, i)"
+            (click)="onClickDot(exp)"
+            title="{{ !exp.isClicked ? 'Click me' : '' }}"
+          ></div>
+          <app-custom-dialog
+            [visible]="showDialog"
+            [data]="dialogData"
+            (closed)="closeDialog()"
+          ></app-custom-dialog>
+          <div class="text">
+            <div class="title">{{ exp.title }}</div>
+            <div class="out-text">
+              <div class="description" *ngIf="exp.isClicked">
+                {{ exp.summary }}
+              </div>
+              <div class="dates" *ngIf="exp.isClicked">
+                {{ exp.country }} | {{ exp.dateFrom }} - {{ exp.dateTo }}
+              </div>
+              <div class="tip" *ngIf="exp.isClicked">Long press on dot for details</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text">{{ currentYear }}</div>
+  </div>
+  <!-- Chiusa parentesi -->
+  <div class="final-bracket">
+    <span class="skills-bracket"> {{ "}" }} </span>
+  </div>
+</div>

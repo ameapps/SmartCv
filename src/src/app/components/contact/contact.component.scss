@@ -1,0 +1,102 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--app-background-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: center;
+    top: -2em;
+
+    //Sezione di DX
+    .up {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .text-box {
+            margin: 2em;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    //Sezione di SX
+    .down {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding-left: 7em;
+        column-gap: 2em;
+        position: relative;
+        row-gap: 1em;
+
+        .form-container {
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            .submit-button {
+                width: calc(100% + 18px)
+            }
+        }
+
+        label {
+            font-weight: bold;
+            color: var(--color-thirdy);
+            font-size: 1em;
+            font-family: var(--font-family-text-level-3);
+            font-weight: 500;
+            position: relative;
+            bottom: 4px;
+        }
+
+        .label-wrong {
+            color: red;
+            font-size: 12px;
+            font-family: var(--font-family-text-level-3);
+            font-weight: 400;
+            position: relative;
+            top: 1px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: var(--color-primary);
+            color: var(--app-background-color);
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background: gray;
+            cursor: not-allowed;
+        }
+    }
+
+    .final-bracket {
+        width: 100%;
+        position: relative;
+        left: 2em;
+        top: 0.5em;
+    }
+
+    .skills-bracket {
+        font-family: var(--font-family-text-level-1);
+        font-size: 54px;
+        color: var(--color-secondary);
+    }
+}

@@ -1,0 +1,99 @@
+{
+  "config": {
+    "lang": "en"
+  },
+  "USER": {
+    "home": {
+      "name": "Demo",
+      "short_descr": ["CODE WIZARD", "SOFTWARE ENGINEER", "EXPERT AI USER"],
+      "long_descr": "Hi! I'm a passionate full-stack developer with experience in a variety of web technologies. I love creating functional and well-designed applications that deliver outstanding user experiences. In my free time, I enjoy exploring new technologies and working on open-source projects."
+    },
+    "about": {
+      "short_descr": "Full-stack developer with a strong passion for clean design and well-structured code. I believe simplicity is the key to efficiency.",
+      "long_descr": "I have been working in web development for several years, on projects ranging from enterprise applications to small experimental web apps. I like to build scalable, maintainable, and user-friendly solutions. I'm naturally curious and constantly strive to improve myself by learning new technologies and sharing knowledge with others. I love the feeling of watching an idea take shape line by line of code."
+    },
+    "contact": {},
+    "experience": {
+      "long_descr": "I had the opportunity to work for several companies using different technologies, from small startups to bigger companies. Each experience taught me something and I continuously improved in my learning journey.",
+      "list": [
+        {
+          "title": "Software Engineer",
+          "summary": "Development of backend applications and REST services in a cloud environment.",
+          "description": "Worked as a full-stack developer in an agile team, mainly focusing on designing and implementing microservices in Node.js and Python, integrating with PostgreSQL databases, and deploying on AWS.",
+          "dateFrom": "2021-03-01",
+          "dateTo": "2023-06-30",
+          "country": "Italy"
+        },
+        {
+          "title": "Junior Developer",
+          "summary": "Support in the development of management software and maintenance of legacy systems.",
+          "description": "Participated in C++/MFC code refactoring projects, bug fixing, and development of new features for reporting modules. Collaborated with the QA team for functional testing.",
+          "dateFrom": "2019-09-01",
+          "dateTo": "2021-02-28",
+          "country": "Italy"
+        },
+        {
+          "title": "Intern - Embedded Systems",
+          "summary": "Internship on embedded systems and IoT device communication.",
+          "description": "Designed and implemented a prototype based on ESP32 with MQTT communication for environmental parameter monitoring. Produced technical documentation and presented the project to the R&D department.",
+          "dateFrom": "2019-01-01",
+          "dateTo": "2019-06-30",
+          "country": "Italy"
+        },
+        {
+          "title": "Freelance Consultant",
+          "summary": "Consulting on software architectures and distributed system integration.",
+          "description": "Analysis and development of middleware for communication between legacy applications and cloud platforms. Provided technical support for database migration and performance optimization.",
+          "dateFrom": "2023-07-01",
+          "dateTo": "",
+          "country": "Italy"
+        }
+      ]
+    },
+    "projects": {
+      "list": [
+        {
+          "image": "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+          "link": "https://nextjs.org/",
+          "name": "Next.js",
+          "description": "Open-source React framework for building web applications with server-side rendering (SSR)."
+        },
+        {
+          "image": "https://angular.io/assets/images/logos/angular/angular.svg",
+          "link": "https://angular.dev/",
+          "name": "Angular",
+          "description": "Frontend framework developed by Google for creating dynamic and modular web applications."
+        },
+        {
+          "image": "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg",
+          "link": "https://getbootstrap.com/",
+          "name": "Bootstrap",
+          "description": "Open-source CSS library for developing responsive and modern web interfaces."
+        },
+        {
+          "image": "https://openlayers.org/theme/img/logo-light.svg",
+          "link": "https://openlayers.org/",
+          "name": "OpenLayers",
+          "description": "JavaScript library for displaying interactive maps in web applications.",
+          "isClicked": false,
+          "isHovering": false
+        },
+        {
+          "image": "https://leafletjs.com/docs/images/logo.png",
+          "link": "https://leafletjs.com/",
+          "name": "Leaflet",
+          "description": "Lightweight library for interactive maps compatible with all major browsers and platforms."
+        },
+        {
+          "image": "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+          "link": "https://nodejs.org/",
+          "name": "Node.js",
+          "description": "Server-side JavaScript runtime environment built on Chrome’s V8 engine."
+        }
+      ]
+    },
+    "skills": {
+      "long_descr": "I excel at breaking down complex problems into manageable tasks, which is essential for creating robust and maintainable code in large-scale projects. I’m driven by challenges and always seek opportunities to improve my skills. My self-taught approach allows me to quickly understand and adapt to new technologies independently."
+    }
+  }
+}
