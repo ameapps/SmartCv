@@ -2,7 +2,7 @@
   "common": {
     "app": {
       "current_user": "DEMO",
-      "app_data": "assets"
+      "data_source": "cloud"
     },
     "header": {
       "can_show_drag_text": false
@@ -15,5 +15,8 @@
     "experience": {},
     "project": {},
     "skills": {}
+  },
+  "firebase": {
+    "dbUrl" : "https://amedevapps-47624-default-rtdb.europe-west1.firebasedatabase.app"
   }
 }
