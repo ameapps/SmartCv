@@ -15,7 +15,7 @@ export class LangSelectorComponent implements OnInit, OnDestroy {
   langChangeTimeout!: NodeJS.Timeout;
 
   get isUrlDataMode(): boolean {
-    return this.common.appConfig?.common.app.app_data === 'url';
+    return this.common.appConfig?.common.app.data_source === 'url';
   }
 
   constructor(private translate: TranslateService, private common: CommonService) {}

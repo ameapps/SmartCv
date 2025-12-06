@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 import { deepClone } from "src/app/shared/helpers/object.helper";
-import { AppDataExperience, AppDataExperienceWorks } from "src/app/shared/models/appData";
+import { AppDataExperienceWorks } from "src/app/shared/models/appData";
 import { CommonService } from "src/app/shared/services/common/common.service";
 
 @Component({
@@ -10,20 +10,26 @@ import { CommonService } from "src/app/shared/services/common/common.service";
   styleUrls: ["./experience.component.scss"],
 })
 export class ExperienceComponent implements OnInit {
+  // #region variables
   showDialog = false;
   dialogData: any = null;
   private longPressTimeouts: any[] = [];
   texts: string[] = ['EXPERIENCE'];
+  public userExperiences: AppDataExperienceWorks[] = [];
+  // #endregion
+
+  // #region getters
   public get currentYear() {
     return new Date().getFullYear();
   }
-  public userExperiences: AppDataExperienceWorks[] = [];
 
   public get long_descr(): string {
-    return this.common?.appData?.experience.long_descr;
+    return this.common?.appData[this.common.current_lang].experience.long_descr;
   };
 
-  constructor(private common: CommonService, private translate: TranslateService) {
+  //#endregion
+
+  constructor(public common: CommonService, private translate: TranslateService) {
     this.subscribe();
   }
 
@@ -32,17 +38,17 @@ export class ExperienceComponent implements OnInit {
       setTimeout(() => {
         // L'esecuz. dell'evento costringe la view a controllare i bindings; riassegnare un array cambia il riferimento.
         this.texts = [this.translate.instant("PAGES.EXPERIENCE.TITLE")];
-        if (this.common?.appData?.experience != null)
+        if (this.common?.appData[this.common.current_lang]?.experience != null)
           //Attendo che il file json sia stato ricaricato
-          this.userExperiences = deepClone(this.common.appData.experience.list);
+          this.userExperiences = deepClone(this.common.appData[this.common.current_lang].experience.list);
       }, 100);
     });
   }
 
   async ngOnInit(): Promise<void> {
-    if (!this.common.hasAppInit) await this.common.initWebApp();
+    await this.common.initWebApp();
     this.texts = [this.translate.instant("PAGES.EXPERIENCE.TITLE")];
-    this.userExperiences = deepClone(this.common.appData.experience.list);
+    this.userExperiences = deepClone(this.common.appData[this.common.current_lang].experience.list);
   }
 
   onClickDot(experience: AppDataExperienceWorks) {

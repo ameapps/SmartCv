@@ -1,16 +1,7 @@
-import {
-  ChangeDetectorRef,
-  Component,
-  Inject,
-  OnDestroy,
-  OnInit,
-} from "@angular/core";
+import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
-import { TypewriterService } from "./shared/services/typeWrite/type-writer-service.service";
-import { lastValueFrom } from "rxjs";
-import { DefaultConfig } from "./shared/models/defaultConfig";
-import { HttpClient } from "@angular/common/http";
 import { CommonService } from "./shared/services/common/common.service";
+import { AppData } from "./shared/models/appData";
 
 @Component({
   selector: "app-root",
@@ -29,15 +20,18 @@ export class AppComponent implements OnInit, OnDestroy {
   ) {}
 
   async ngOnInit() {
-    //Operazioni di inizializzazione app
-    if (!this.common.hasAppInit) await this.common.initWebApp();
+    await this.common.initWebApp();
     this.onLangSub = this.translate.onLangChange.subscribe((event) => {
-      this.common.getUserData();
-      this.cdr.detectChanges(); // forza l'aggiornamento
+      this.onLangChanged(event.lang);
     });
   }
 
   ngOnDestroy(): void {
     this.onLangSub.unsubscribe();
+  }
+
+  public async onLangChanged(lang: string) {
+    if (!this.common.isLangSaved()) this.common.appData[lang] = await this.common.getUserData() ?? new AppData();
+    this.cdr.detectChanges();
   }
 }

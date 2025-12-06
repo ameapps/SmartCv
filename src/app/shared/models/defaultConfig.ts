@@ -1,6 +1,11 @@
 export class DefaultConfig {
   common!: DefaultConfigCommon;
   pages!: DefaultConfigPages;
+  firebase!: DefaultFirebaseConfig;
+}
+
+export class DefaultFirebaseConfig {
+  dbUrl!: string;  
 }
 
 export class DefaultConfigCommon {
@@ -30,5 +35,6 @@ export class DefaultConfigCommonHeader {
 
 export class DefaultConfigCommonApp {
   current_user = 'DEMO';
-  app_data: 'assets' | 'url' | 'cloud' = 'assets';
+  uId?: string;
+  data_source: 'assets' | 'url' | 'cloud' = 'assets';
 }

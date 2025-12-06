@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container" *ngIf="this.common.isDataReady">
   <div class="text-box">
     <app-dynamic-text 
-      [texts]="[this.common.appData.home.name]"
+      [texts]="[this.common.appData[this.common.current_lang].home.name]"
       [config]="'intro-title'"
     ></app-dynamic-text>
     <!-- Testo corto -->

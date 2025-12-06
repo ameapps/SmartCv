@@ -14,13 +14,13 @@ import { TypewriterService } from 'src/app/shared/services/typeWrite/type-writer
 export class HomeComponent implements OnInit {
 
   get homeTexts(): AppDataHome {
-    return this.common.appData.home;
+    return this.common.appData[this.common.current_lang].home;
   }
 
   constructor(public common: CommonService) { }
 
   async ngOnInit(): Promise<void> {
-    if (!this.common.hasAppInit) await this.common.initWebApp();
+    await this.common.initWebApp();
   }
 
   /**Method opening the given linkedIn profile! */

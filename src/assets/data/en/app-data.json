@@ -2,7 +2,7 @@
   "config": {
     "lang": "en"
   },
-  "USER": {
+  "DEMO": {
     "home": {
       "name": "Demo",
       "short_descr": ["CODE WIZARD", "SOFTWARE ENGINEER", "EXPERT AI USER"],
@@ -89,6 +89,80 @@
           "link": "https://nodejs.org/",
           "name": "Node.js",
           "description": "Server-side JavaScript runtime environment built on Chrome’s V8 engine."
+        }
+      ]
+    },
+    "skills": {
+      "long_descr": "I excel at breaking down complex problems into manageable tasks, which is essential for creating robust and maintainable code in large-scale projects. I’m driven by challenges and always seek opportunities to improve my skills. My self-taught approach allows me to quickly understand and adapt to new technologies independently."
+    }
+  },
+  "STEAME": {
+    "home": {
+      "name": "Stefano",
+      "short_descr": ["CODE WIZARD", "SOFTWARE ENGINEER", "EXPERT AI USER"],
+      "long_descr": "Self-taught programmer driven by passion and personal projects. Skilled at finding bugs through targeted Google searches and quickly identifying the most effective solutions on StackOverflow."
+    },
+    "about": {
+      "short_descr": "Software engineer with over 6 years of experience. Full-time developer and proud bug creator.",
+      "long_descr": "Passionate about computers since childhood. I’ve spent over 5 years honing my skills through diverse projects. Since I was 9, I’ve loved computer science. This passion turned into a real career where I continue to learn and stay updated with technology. I prefer learning by doing rather than just watching tutorials. Over the years, I’ve independently developed numerous open-source projects to experiment with a wide range of technologies."
+    },
+    "contact": {},
+    "experience": {
+      "long_descr": "I had the opportunity to work for several companies using different technologies, from small startups to bigger companies. Each experience taught me something and I continuously improved in my learning journey.",
+      "list": [
+        {
+          "title": "ZInformatica",
+          "summary": "Asp .NET MVC",
+          "description": "Development and maintenance of web applications based on ASP.NET MVC, focusing on designing scalable and secure architectures. Implementation of business logic and responsive user interfaces. Integration with relational databases and external services. Collaboration with the team to optimize performance and usability.",
+          "dateFrom": "mm/yy",
+          "dateTo": "mm/yy",
+          "country": "Italy"
+        },
+        {
+          "title": "LHub",
+          "summary": "WordPress; HTML & CSS",
+          "description": "Creation and customization of websites on the WordPress platform, focusing on both technical and aesthetic aspects. Development of custom themes and plugins. On-page SEO optimization and performance improvement. Use of HTML5 and CSS3 to ensure responsive design and cross-browser compatibility.",
+          "dateFrom": "mm/yy",
+          "dateTo": "mm/yy",
+          "country": "Italy"
+        },
+        {
+          "title": "Artiso",
+          "summary": "React, WPF",
+          "description": "Participation in international projects focused on developing modern and high-performance interfaces. Creation of single-page applications (SPA) using React. Development of desktop applications with Windows Presentation Foundation (WPF). Integration of REST APIs and state management. Worked in an agile team with emphasis on code quality and automated testing.",
+          "dateFrom": "mm/yy",
+          "dateTo": "mm/yy",
+          "country": "Germany"
+        },
+        {
+          "title": "Softech",
+          "summary": "Angular, Ionic, .NET Core, SQL Server, PostgreSQL",
+          "description": "Full-stack development of enterprise and mobile solutions using modern, scalable technologies. Creation of web applications with Angular and cross-platform mobile apps with Ionic. Implementation of RESTful APIs and backend services in .NET Core. Design and management of complex databases (SQL Server, PostgreSQL). Query optimization and performance tuning. Participation in CI/CD processes and Agile/Scrum methodologies.",
+          "dateFrom": "mm/yy",
+          "dateTo": "mm/yy",
+          "country": "Italy"
+        }
+      ]
+    },
+    "projects": {
+      "list": [
+        {
+          "image": "https://github.com/ameapps/SharedLogin/blob/master/src/assets/images/products/WordleClone/vect.png?raw=true",
+          "link": "https://ameapps.github.io/WordleCloneV2/",
+          "name": "WordleClone",
+          "description": "App that simulates the Wordle game"
+        },
+        {
+          "image": "https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/SportTracker/vect.svg",
+          "link": "https://ameapps.github.io/SportTracker/#/menu/homepage",
+          "name": "SportMonitoring",
+          "description": "App for tracking sports activities and food intake"
+        },
+        {
+          "image": "https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/GameScopa/vect.svg",
+          "link": "https://ameapps.github.io/GameScopa",
+          "name": "GameScopa",
+          "description": "Famous Italian card game"
         }
       ]
     },

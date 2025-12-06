@@ -25,9 +25,9 @@ export class AboutComponent implements OnInit {
       setTimeout(() => {
         // L'esecuz. dell'evento costringe la view a controllare i bindings; riassegnare un array cambia il riferimento.
         this.texts = [this.translate.instant("PAGES.ABOUT.TITLE")];
-        if (this.common?.appData?.about != null)
+        if (this.common?.appData[this.common.current_lang]?.about != null)
           //Attendo che il file json sia stato ricaricato
-          this.userAbout = deepClone(this.common.appData.about);
+          this.userAbout = deepClone(this.common.appData[this.common.current_lang].about);
       }, 100);
     });
   }
@@ -36,6 +36,6 @@ export class AboutComponent implements OnInit {
     //Operazioni di inizializzazione app
     if (!this.common.hasAppInit) await this.common.initWebApp();
     this.texts = [this.translate.instant("PAGES.ABOUT.TITLE")];
-    this.userAbout = deepClone(this.common.appData.about);
+    this.userAbout = deepClone(this.common.appData[this.common.current_lang].about);
   }
 }

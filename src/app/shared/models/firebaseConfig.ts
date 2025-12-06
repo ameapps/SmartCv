@@ -7,5 +7,4 @@ export class FirebaseConfig {
   messagingSenderId!: number;
   appId!: string;
   measurementId!: string;
-  dbUrl!: string;  
 }

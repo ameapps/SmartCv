@@ -11,12 +11,12 @@ import { CommonService } from 'src/app/shared/services/common/common.service';
 })
 export class ProjectsComponent implements OnInit {
 
+  public userProjects: AppDataProject[] = [];
   showDialog = false;
   dialogData: any = null;
-  public userProjects: AppDataProject[] = [];
   texts = ['PROJECTS'];
 
-  constructor(private common: CommonService, private translate: TranslateService) {
+  constructor(public common: CommonService, private translate: TranslateService) {
     this.subscribe();
   }
 
@@ -25,17 +25,17 @@ export class ProjectsComponent implements OnInit {
       setTimeout(() => {
         // L'esecuz. dell'evento costringe la view a controllare i bindings; riassegnare un array cambia il riferimento.
         this.texts = [this.translate.instant("PAGES.PROJECTS.TITLE")];
-        if (this.common?.appData?.projects != null)
+        if (this.common?.appData[this.common.current_lang]?.projects != null)
           //Attendo che il file json sia stato ricaricato
-          this.userProjects = deepClone(this.common.appData.projects.list);
+          this.userProjects = deepClone(this.common.appData[this.common.current_lang].projects.list);
       }, 100);
     });
   }
 
   async ngOnInit(): Promise<void> {
-    if (!this.common.hasAppInit) await this.common.initWebApp();
+    await this.common.initWebApp();
     this.texts = [this.translate.instant("PAGES.PROJECTS.TITLE")];
-    this.userProjects = this.common.appData.projects.list;
+    this.userProjects = deepClone(this.common.appData[this.common.current_lang].projects.list);
   }
 
   onHoverProject(project: AppDataProject) {

@@ -2,7 +2,7 @@
   "config": {
     "lang": "it"
   },
-  "USER": {
+  "DEMO": {
     "home": {
       "name": "Demo",
       "short_descr": [
@@ -93,6 +93,84 @@
           "link": "https://nodejs.org/",
           "name": "Node.js",
           "description": "Ambiente di runtime JavaScript lato server basato sul motore V8 di Chrome."
+        }
+      ]
+    },
+    "skills": {
+      "long_descr": "Eccello nel scomporre problemi complessi in compiti gestibili, essenziale per creare codice robusto e manutenibile in progetti di grande scala. Sono motivato dalle sfide, sempre alla ricerca di opportunità per migliorare le mie competenze. Il mio approccio autodidatta mi permette di comprendere e adattarmi rapidamente a nuove tecnologie in modo autonomo."
+    }
+  },
+  "STEAME": {
+    "home": {
+      "name": "Stefano",
+      "short_descr": [
+        "CODE WIZARD",
+        "SOFTWARE ENGINEER",
+        "EXPERT AI USER"
+      ],
+      "long_descr": "Programmatore autodidatta, motivato dalla passione e da progetti personali. Esperto nell’individuare bug tramite ricerche mirate su Google e nel selezionare rapidamente le soluzioni più efficaci su StackOverflow."
+    },
+    "about": {
+      "short_descr": "Ingegnere del software con oltre 6 anni di esperienza. Sviluppatore a tempo pieno e fiero creatore di bug.",
+      "long_descr": "Appassionato di informatica fin da bambino. Ho trascorso oltre 5 anni affinando le mie competenze attraverso progetti diversi. Fin da quando avevo 9 anni amo l'informatica. Questo interesse è diventato una vera carriera in cui continuo a imparare e a tenermi aggiornato con la tecnologia. Mi piace imparare facendo, non guardando tutorial. Nel corso degli anni ho sviluppato autonomamente numerosi progetti open source per sperimentare con una vasta gamma di tecnologie."
+    },
+    "contact": {},
+    "experience": {
+      "long_descr": "Ho avuto l'opportunità di lavorare per diverse aziende, dalle piccole startup alle grandi aziende, utilizzando tecnologie diverse. Ogni esperienza mi ha insegnato qualcosa e ho migliorato costantemente il mio percorso di apprendimento.",
+      "list": [
+        {
+          "title": "ZInformatica",
+          "summary": "Asp .NET MVC",
+          "description": "Sviluppo e manutenzione di applicazioni web basate su ASP.NET MVC, con particolare attenzione alla progettazione di architetture scalabili e sicure. Implementazione di logiche di business e interfacce utente responsive. Integrazione con database relazionali e servizi esterni. Collaborazione con il team per ottimizzare performance e usabilità.",
+          "dateFrom": "mm/yy",
+          "dateTo": "mm/yy",
+          "country": "Italy"
+        },
+        {
+          "title": "LHub",
+          "summary": "Wordpress; HTML & CSS",
+          "description": "Realizzazione e personalizzazione di siti web su piattaforma WordPress, curando sia la parte tecnica che quella estetica. Sviluppo di temi e plugin custom. Ottimizzazione SEO on-page e miglioramento delle performance di caricamento. Utilizzo di HTML5 e CSS3 per garantire design responsive e compatibilità cross-browser.",
+          "dateFrom": "mm/yy",
+          "dateTo": "mm/yy",
+          "country": "Italy"
+        },
+        {
+          "title": "Artiso",
+          "summary": "React, WPF",
+          "description": "Partecipazione a progetti internazionali focalizzati sullo sviluppo di interfacce moderne e performanti. Creazione di single-page applications (SPA) con React. Sviluppo di applicazioni desktop con Windows Presentation Foundation (WPF). Integrazione di API REST e gestione dello stato applicativo. Collaborazione in team agile, con attenzione a qualità del codice e test automatizzati.",
+          "dateFrom": "mm/yy",
+          "dateTo": "mm/yy",
+          "country": "Germany"
+        },
+        {
+          "title": "Softech",
+          "summary": "Angular, Ionic, .NET core, Sql server, postGreSQL",
+          "description": "Sviluppo full-stack di soluzioni enterprise e mobile, con tecnologie moderne e orientate alla scalabilità. Creazione di applicazioni web con Angular e mobile cross-platform con Ionic. Implementazione di API RESTful e servizi backend in .NET Core. Progettazione e gestione di database complessi (SQL Server, PostgreSQL). Ottimizzazione delle query e tuning delle performance. Partecipazione a processi di CI/CD e metodologie Agile/Scrum.",
+          "dateFrom": "mm/yy",
+          "dateTo": "mm/yy",
+          "country": "Italy"
+        }
+      ]
+    },
+    "projects": {
+      "list": [
+        {
+          "image": "https://github.com/ameapps/SharedLogin/blob/master/src/assets/images/products/WordleClone/vect.png?raw=true",
+          "link": "https://ameapps.github.io/WordleCloneV2/",
+          "name": "WordleClone",
+          "description": "App che simula il gioco Wordle"
+        },
+        {
+          "image": "https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/SportTracker/vect.svg",
+          "link": "https://ameapps.github.io/SportTracker/#/menu/homepage",
+          "name": "SportMonitoring",
+          "description": "App per il monitoraggio delle attività sportive e del cibo assunto"
+        },
+        {
+          "image": "https://raw.githubusercontent.com/ameapps/SharedLogin/7aeadbf876af41b4981ea1883666fb8948cb3c77/src/assets/images/products/GameScopa/vect.svg",
+          "link": "https://ameapps.github.io/GameScopa",
+          "name": "GameScopa",
+          "description": "Celebre gioco di carte italiano"
         }
       ]
     },
