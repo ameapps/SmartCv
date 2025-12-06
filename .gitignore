@@ -28,8 +28,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # file to ignore 
-
-.git DEMO.zip
-.git DEV.zip
 src\assets\firebase
-tools

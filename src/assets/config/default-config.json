@@ -2,7 +2,7 @@
   "common": {
     "app": {
       "current_user": "DEMO",
-      "app_data": "assets"
+      "app_data": "cloud"
     },
     "header": {
       "can_show_drag_text": false
